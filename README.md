@@ -1,6 +1,6 @@
 # SlideMenuDovi
 
-[![CI Status](http://img.shields.io/travis/Edouard Roussillon/SlideMenuDovi.svg?style=flat)](https://travis-ci.org/Edouard Roussillon/SlideMenuDovi)
+[![CI Status](http://img.shields.io/travis/Douvi/SlideMenuDovi.svg?style=flat)](https://travis-ci.org/Douvi/SlideMenuDovi)
 [![Version](https://img.shields.io/cocoapods/v/SlideMenuDovi.svg?style=flat)](http://cocoapods.org/pods/SlideMenuDovi)
 [![License](https://img.shields.io/cocoapods/l/SlideMenuDovi.svg?style=flat)](http://cocoapods.org/pods/SlideMenuDovi)
 [![Platform](https://img.shields.io/cocoapods/p/SlideMenuDovi.svg?style=flat)](http://cocoapods.org/pods/SlideMenuDovi)
@@ -22,7 +22,7 @@ pod "SlideMenuDovi"
 
 ## Author
 
-Edouard Roussillon, edouardroussillon@concrete.com.br
+Edouard Roussillon
 
 ## License
 
