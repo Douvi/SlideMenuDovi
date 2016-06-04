@@ -1,0 +1,6 @@
+framework module Pods_SlideMenuDoviTests {
+  umbrella header "Pods-SlideMenuDoviTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

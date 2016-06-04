@@ -1,14 +1,14 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+# Uncomment this line if you're using Swift
 use_frameworks!
 
-target 'SlideMenuDovi_Example' do
-  pod 'SlideMenuDovi', :path => '../'
+target 'SlideMenuDovi' do
 
-  target 'SlideMenuDovi_Tests' do
-    inherit! :search_paths
+end
 
-    pod 'Quick', '~> 0.8'
-  pod 'Nimble', '~> 3.0'
-  pod 'FBSnapshotTestCase'
-  pod 'Nimble-Snapshots'
-  end
+target 'SlideMenuDoviTests' do
+    pod 'Quick', '~> 0.9.2'
+    pod 'Nimble', '~> 4.0.0'
+    pod 'KIF', '~> 3.4.2'
 end
