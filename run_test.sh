@@ -1,6 +1,6 @@
 #! /bin/bash
 
-project="SlideMenuDoviTests"
+project="SlideMenuDovi"
 workspace="SlideMenuDovi.xcworkspace"
 destination="platform=iOS Simulator,name=iPhone 6S,OS=9.3"
 

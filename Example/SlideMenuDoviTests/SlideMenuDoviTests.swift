@@ -54,9 +54,11 @@ public class SlideMenuDoviTests: QuickSpec {
                 }
                 
                 it("open and close left side by swipe") {
-                    self.tester.swipeViewWithAccessibilityIdentifier(self.rootViewRoot, inDirection: KIFSwipeDirection.Right)
+                    self.swipeLeftToRight()
+                    self.wait(seconds: 2)
                     expect(self.rootViewController.isSlideMenuLeftOpen()).to(equal(true))
                     self.tester.swipeViewWithAccessibilityIdentifier(self.rootViewRoot, inDirection: KIFSwipeDirection.Left)
+                    self.wait(seconds: 2)
                     expect(self.rootViewController.isSlideMenuLeftOpen()).to(equal(false))
                 }
 
@@ -73,6 +75,7 @@ public class SlideMenuDoviTests: QuickSpec {
                     self.wait()
                     expect(self.rootViewController.isSlideMenuRightOpen()).to(equal(true))
                     self.tester.swipeViewWithAccessibilityIdentifier(self.rootViewRoot, inDirection: KIFSwipeDirection.Right)
+                    self.wait()
                     expect(self.rootViewController.isSlideMenuRightOpen()).to(equal(false))
                 }
             }
@@ -101,9 +104,11 @@ public class SlideMenuDoviTests: QuickSpec {
                 }
                 
                 it("open and close left side by swipe") {
-                    self.tester.swipeViewWithAccessibilityIdentifier(self.rootViewRoot, inDirection: KIFSwipeDirection.Right)
+                    self.swipeLeftToRight()
+                    self.wait(seconds: 2)
                     expect(self.rootViewController.isSlideMenuLeftOpen()).to(equal(true))
                     self.tester.swipeViewWithAccessibilityIdentifier(self.rootViewRoot, inDirection: KIFSwipeDirection.Left)
+                    self.wait(seconds: 2)
                     expect(self.rootViewController.isSlideMenuLeftOpen()).to(equal(false))
                 }
                 
@@ -120,6 +125,7 @@ public class SlideMenuDoviTests: QuickSpec {
                     self.wait()
                     expect(self.rootViewController.isSlideMenuRightOpen()).to(equal(true))
                     self.tester.swipeViewWithAccessibilityIdentifier(self.rootViewRoot, inDirection: KIFSwipeDirection.Right)
+                    self.wait()
                     expect(self.rootViewController.isSlideMenuRightOpen()).to(equal(false))
                 }
             }
@@ -140,6 +146,18 @@ public class SlideMenuDoviTests: QuickSpec {
         
         let point:CGPoint = CGPointMake(x, y);
         self.rootViewController.view.longPressAtPoint(point, duration:0.1)
+    }
+    
+    private func swipeLeftToRight() {
+        let x:CGFloat = 0
+        let y = self.navRootViewController.view.bounds.height / 2
+        let point:CGPoint = CGPointMake(x, y);
+        
+        let xTo:CGFloat = self.navRootViewController.view.bounds.width / 2
+        let yTo:CGFloat = 0
+        let point2:CGPoint = CGPointMake(xTo, yTo);
+        
+        self.rootViewController.view.dragFromPoint(point, toPoint: point2, steps: 20)
     }
     
     private func swipeRightToLeft() {
