@@ -8,31 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		634278F7A301A72677E11F2F /* Pods_SlideMenuDoviTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF42B5A2E43B725D9DC0C2E1 /* Pods_SlideMenuDoviTests.framework */; };
+		D808CBBE1D0382A5008F2077 /* SliderMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808CBBC1D0382A5008F2077 /* SliderMenuOption.swift */; };
+		D808CBBF1D0382A5008F2077 /* SliderMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808CBBD1D0382A5008F2077 /* SliderMenuViewController.swift */; };
 		D81ED1F91D01E65100AC7795 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED1F81D01E65100AC7795 /* AppDelegate.swift */; };
 		D81ED1FB1D01E65100AC7795 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED1FA1D01E65100AC7795 /* MainViewController.swift */; };
 		D81ED1FE1D01E65100AC7795 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81ED1FC1D01E65100AC7795 /* Main.storyboard */; };
 		D81ED2001D01E65100AC7795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D81ED1FF1D01E65100AC7795 /* Assets.xcassets */; };
 		D81ED2031D01E65100AC7795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81ED2011D01E65100AC7795 /* LaunchScreen.storyboard */; };
-		D81ED22B1D01E6A600AC7795 /* SliderMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED2291D01E6A600AC7795 /* SliderMenuOption.swift */; };
-		D81ED22C1D01E6A600AC7795 /* SliderMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED22A1D01E6A600AC7795 /* SliderMenuViewController.swift */; };
-		D81ED2351D01E6D600AC7795 /* MenuTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED2321D01E6D600AC7795 /* MenuTools.swift */; };
-		D81ED2361D01E6D600AC7795 /* MenuViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED2331D01E6D600AC7795 /* MenuViewControllers.swift */; };
-		D81ED2371D01E6D600AC7795 /* MenuViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED2341D01E6D600AC7795 /* MenuViews.swift */; };
-		D81ED2391D01E6E000AC7795 /* UIViewController+SilderMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED2381D01E6E000AC7795 /* UIViewController+SilderMenu.swift */; };
-		D81ED2401D01E70C00AC7795 /* SliderMenuAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED23D1D01E70C00AC7795 /* SliderMenuAnimation.swift */; };
-		D81ED2411D01E70C00AC7795 /* SliderMenuAnimationDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED23E1D01E70C00AC7795 /* SliderMenuAnimationDefault.swift */; };
-		D81ED2421D01E70C00AC7795 /* SliderMenuAnimationSilderOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED23F1D01E70C00AC7795 /* SliderMenuAnimationSilderOver.swift */; };
-		D81ED2441D01E71B00AC7795 /* GlobalVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED2431D01E71B00AC7795 /* GlobalVariable.swift */; };
-		D81ED2471D01E72900AC7795 /* SliderMenuGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED2451D01E72900AC7795 /* SliderMenuGesture.swift */; };
-		D81ED2481D01E72900AC7795 /* SliderMenuGestureDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED2461D01E72900AC7795 /* SliderMenuGestureDefault.swift */; };
-		D81ED24D1D01E74900AC7795 /* AnimatorChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED24B1D01E74900AC7795 /* AnimatorChecker.swift */; };
-		D81ED24E1D01E74900AC7795 /* AnimatorCheckerSliderOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED24C1D01E74900AC7795 /* AnimatorCheckerSliderOver.swift */; };
-		D81ED2521D01E75C00AC7795 /* AnimatorGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED2501D01E75C00AC7795 /* AnimatorGesture.swift */; };
-		D81ED2531D01E75C00AC7795 /* AnimatorGestureSlideOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED2511D01E75C00AC7795 /* AnimatorGestureSlideOver.swift */; };
-		D81ED2561D01E76700AC7795 /* AnimatorFire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED2541D01E76700AC7795 /* AnimatorFire.swift */; };
-		D81ED2571D01E76700AC7795 /* AnimatorFireSlideOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED2551D01E76700AC7795 /* AnimatorFireSlideOver.swift */; };
-		D81ED25A1D01E77500AC7795 /* AnimatorVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED2581D01E77500AC7795 /* AnimatorVector.swift */; };
-		D81ED25B1D01E77500AC7795 /* AnimatorVectorSlideOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED2591D01E77500AC7795 /* AnimatorVectorSlideOver.swift */; };
 		D81ED25D1D01E87D00AC7795 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED25C1D01E87D00AC7795 /* LeftViewController.swift */; };
 		D81ED25F1D01E8AE00AC7795 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED25E1D01E8AE00AC7795 /* RightViewController.swift */; };
 		D81ED2611D01E90A00AC7795 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED2601D01E90A00AC7795 /* RootViewController.swift */; };
@@ -55,6 +37,8 @@
 /* Begin PBXFileReference section */
 		AF42B5A2E43B725D9DC0C2E1 /* Pods_SlideMenuDoviTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideMenuDoviTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D765790063CC4B1C30AE32C9 /* Pods-SlideMenuDoviTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideMenuDoviTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideMenuDoviTests/Pods-SlideMenuDoviTests.release.xcconfig"; sourceTree = "<group>"; };
+		D808CBBC1D0382A5008F2077 /* SliderMenuOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuOption.swift; path = ../../SlideMenu/SliderMenuOption.swift; sourceTree = "<group>"; };
+		D808CBBD1D0382A5008F2077 /* SliderMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuViewController.swift; path = ../../SlideMenu/SliderMenuViewController.swift; sourceTree = "<group>"; };
 		D81ED1F51D01E65100AC7795 /* SlideMenuDovi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideMenuDovi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81ED1F81D01E65100AC7795 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D81ED1FA1D01E65100AC7795 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -64,26 +48,6 @@
 		D81ED2041D01E65100AC7795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D81ED2091D01E65100AC7795 /* SlideMenuDoviTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideMenuDoviTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81ED20F1D01E65100AC7795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D81ED2291D01E6A600AC7795 /* SliderMenuOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderMenuOption.swift; sourceTree = "<group>"; };
-		D81ED22A1D01E6A600AC7795 /* SliderMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderMenuViewController.swift; sourceTree = "<group>"; };
-		D81ED2321D01E6D600AC7795 /* MenuTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTools.swift; sourceTree = "<group>"; };
-		D81ED2331D01E6D600AC7795 /* MenuViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewControllers.swift; sourceTree = "<group>"; };
-		D81ED2341D01E6D600AC7795 /* MenuViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViews.swift; sourceTree = "<group>"; };
-		D81ED2381D01E6E000AC7795 /* UIViewController+SilderMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SilderMenu.swift"; sourceTree = "<group>"; };
-		D81ED23D1D01E70C00AC7795 /* SliderMenuAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderMenuAnimation.swift; sourceTree = "<group>"; };
-		D81ED23E1D01E70C00AC7795 /* SliderMenuAnimationDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderMenuAnimationDefault.swift; sourceTree = "<group>"; };
-		D81ED23F1D01E70C00AC7795 /* SliderMenuAnimationSilderOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderMenuAnimationSilderOver.swift; sourceTree = "<group>"; };
-		D81ED2431D01E71B00AC7795 /* GlobalVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariable.swift; sourceTree = "<group>"; };
-		D81ED2451D01E72900AC7795 /* SliderMenuGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderMenuGesture.swift; sourceTree = "<group>"; };
-		D81ED2461D01E72900AC7795 /* SliderMenuGestureDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderMenuGestureDefault.swift; sourceTree = "<group>"; };
-		D81ED24B1D01E74900AC7795 /* AnimatorChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatorChecker.swift; sourceTree = "<group>"; };
-		D81ED24C1D01E74900AC7795 /* AnimatorCheckerSliderOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatorCheckerSliderOver.swift; sourceTree = "<group>"; };
-		D81ED2501D01E75C00AC7795 /* AnimatorGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatorGesture.swift; sourceTree = "<group>"; };
-		D81ED2511D01E75C00AC7795 /* AnimatorGestureSlideOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatorGestureSlideOver.swift; sourceTree = "<group>"; };
-		D81ED2541D01E76700AC7795 /* AnimatorFire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatorFire.swift; sourceTree = "<group>"; };
-		D81ED2551D01E76700AC7795 /* AnimatorFireSlideOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatorFireSlideOver.swift; sourceTree = "<group>"; };
-		D81ED2581D01E77500AC7795 /* AnimatorVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatorVector.swift; sourceTree = "<group>"; };
-		D81ED2591D01E77500AC7795 /* AnimatorVectorSlideOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatorVectorSlideOver.swift; sourceTree = "<group>"; };
 		D81ED25C1D01E87D00AC7795 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		D81ED25E1D01E8AE00AC7795 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 		D81ED2601D01E90A00AC7795 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -177,12 +141,12 @@
 		D81ED2281D01E69200AC7795 /* SliderMenu */ = {
 			isa = PBXGroup;
 			children = (
+				D808CBBC1D0382A5008F2077 /* SliderMenuOption.swift */,
+				D808CBBD1D0382A5008F2077 /* SliderMenuViewController.swift */,
 				D81ED23C1D01E70500AC7795 /* AnimationType */,
 				D81ED22D1D01E6A900AC7795 /* Configuration */,
 				D81ED22F1D01E6B900AC7795 /* Extension */,
 				D81ED22E1D01E6B600AC7795 /* Tools */,
-				D81ED2291D01E6A600AC7795 /* SliderMenuOption.swift */,
-				D81ED22A1D01E6A600AC7795 /* SliderMenuViewController.swift */,
 			);
 			path = SliderMenu;
 			sourceTree = "<group>";
@@ -200,9 +164,6 @@
 		D81ED22E1D01E6B600AC7795 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				D81ED2321D01E6D600AC7795 /* MenuTools.swift */,
-				D81ED2331D01E6D600AC7795 /* MenuViewControllers.swift */,
-				D81ED2341D01E6D600AC7795 /* MenuViews.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -210,7 +171,6 @@
 		D81ED22F1D01E6B900AC7795 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				D81ED2381D01E6E000AC7795 /* UIViewController+SilderMenu.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -218,8 +178,6 @@
 		D81ED2301D01E6BC00AC7795 /* AnimatorVector */ = {
 			isa = PBXGroup;
 			children = (
-				D81ED2581D01E77500AC7795 /* AnimatorVector.swift */,
-				D81ED2591D01E77500AC7795 /* AnimatorVectorSlideOver.swift */,
 			);
 			path = AnimatorVector;
 			sourceTree = "<group>";
@@ -227,8 +185,6 @@
 		D81ED2311D01E6BE00AC7795 /* Gesture */ = {
 			isa = PBXGroup;
 			children = (
-				D81ED2451D01E72900AC7795 /* SliderMenuGesture.swift */,
-				D81ED2461D01E72900AC7795 /* SliderMenuGestureDefault.swift */,
 			);
 			path = Gesture;
 			sourceTree = "<group>";
@@ -236,7 +192,6 @@
 		D81ED23A1D01E6E800AC7795 /* Generic */ = {
 			isa = PBXGroup;
 			children = (
-				D81ED2431D01E71B00AC7795 /* GlobalVariable.swift */,
 			);
 			path = Generic;
 			sourceTree = "<group>";
@@ -255,9 +210,6 @@
 		D81ED23C1D01E70500AC7795 /* AnimationType */ = {
 			isa = PBXGroup;
 			children = (
-				D81ED23D1D01E70C00AC7795 /* SliderMenuAnimation.swift */,
-				D81ED23E1D01E70C00AC7795 /* SliderMenuAnimationDefault.swift */,
-				D81ED23F1D01E70C00AC7795 /* SliderMenuAnimationSilderOver.swift */,
 			);
 			path = AnimationType;
 			sourceTree = "<group>";
@@ -265,8 +217,6 @@
 		D81ED2491D01E73200AC7795 /* AnimatorFire */ = {
 			isa = PBXGroup;
 			children = (
-				D81ED2541D01E76700AC7795 /* AnimatorFire.swift */,
-				D81ED2551D01E76700AC7795 /* AnimatorFireSlideOver.swift */,
 			);
 			path = AnimatorFire;
 			sourceTree = "<group>";
@@ -274,8 +224,6 @@
 		D81ED24A1D01E73400AC7795 /* AnimatorChecker */ = {
 			isa = PBXGroup;
 			children = (
-				D81ED24B1D01E74900AC7795 /* AnimatorChecker.swift */,
-				D81ED24C1D01E74900AC7795 /* AnimatorCheckerSliderOver.swift */,
 			);
 			path = AnimatorChecker;
 			sourceTree = "<group>";
@@ -283,8 +231,6 @@
 		D81ED24F1D01E74C00AC7795 /* AnimatorGesture */ = {
 			isa = PBXGroup;
 			children = (
-				D81ED2501D01E75C00AC7795 /* AnimatorGesture.swift */,
-				D81ED2511D01E75C00AC7795 /* AnimatorGestureSlideOver.swift */,
 			);
 			path = AnimatorGesture;
 			sourceTree = "<group>";
@@ -458,32 +404,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D81ED2421D01E70C00AC7795 /* SliderMenuAnimationSilderOver.swift in Sources */,
-				D81ED2521D01E75C00AC7795 /* AnimatorGesture.swift in Sources */,
-				D81ED2481D01E72900AC7795 /* SliderMenuGestureDefault.swift in Sources */,
-				D81ED2561D01E76700AC7795 /* AnimatorFire.swift in Sources */,
-				D81ED22C1D01E6A600AC7795 /* SliderMenuViewController.swift in Sources */,
-				D81ED2471D01E72900AC7795 /* SliderMenuGesture.swift in Sources */,
-				D81ED2441D01E71B00AC7795 /* GlobalVariable.swift in Sources */,
-				D81ED2531D01E75C00AC7795 /* AnimatorGestureSlideOver.swift in Sources */,
-				D81ED24D1D01E74900AC7795 /* AnimatorChecker.swift in Sources */,
-				D81ED2351D01E6D600AC7795 /* MenuTools.swift in Sources */,
+				D808CBBF1D0382A5008F2077 /* SliderMenuViewController.swift in Sources */,
+				D808CBBE1D0382A5008F2077 /* SliderMenuOption.swift in Sources */,
 				D81ED25D1D01E87D00AC7795 /* LeftViewController.swift in Sources */,
 				D81ED1FB1D01E65100AC7795 /* MainViewController.swift in Sources */,
-				D81ED25A1D01E77500AC7795 /* AnimatorVector.swift in Sources */,
-				D81ED2361D01E6D600AC7795 /* MenuViewControllers.swift in Sources */,
-				D81ED2571D01E76700AC7795 /* AnimatorFireSlideOver.swift in Sources */,
 				D81ED2611D01E90A00AC7795 /* RootViewController.swift in Sources */,
-				D81ED24E1D01E74900AC7795 /* AnimatorCheckerSliderOver.swift in Sources */,
 				D8E71A171D0223880082248C /* ListAnimationViewController.swift in Sources */,
-				D81ED2411D01E70C00AC7795 /* SliderMenuAnimationDefault.swift in Sources */,
 				D81ED25F1D01E8AE00AC7795 /* RightViewController.swift in Sources */,
-				D81ED2391D01E6E000AC7795 /* UIViewController+SilderMenu.swift in Sources */,
-				D81ED25B1D01E77500AC7795 /* AnimatorVectorSlideOver.swift in Sources */,
 				D81ED1F91D01E65100AC7795 /* AppDelegate.swift in Sources */,
-				D81ED2371D01E6D600AC7795 /* MenuViews.swift in Sources */,
-				D81ED22B1D01E6A600AC7795 /* SliderMenuOption.swift in Sources */,
-				D81ED2401D01E70C00AC7795 /* SliderMenuAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,7 @@
 #! /bin/bash
 
-project="SliderMenuDoviTests"
-workspace="SliderMenuDovi.xcworkspace"
+project="SlideMenuDoviTests"
+workspace="SlideMenuDovi.xcworkspace"
 destination="platform=iOS Simulator,name=iPhone 6S,OS=9.3"
 
 eval "cd Example"
