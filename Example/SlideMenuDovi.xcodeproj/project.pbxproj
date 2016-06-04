@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		634278F7A301A72677E11F2F /* Pods_SlideMenuDoviTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF42B5A2E43B725D9DC0C2E1 /* Pods_SlideMenuDoviTests.framework */; };
-		D808CBBE1D0382A5008F2077 /* SliderMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808CBBC1D0382A5008F2077 /* SliderMenuOption.swift */; };
-		D808CBBF1D0382A5008F2077 /* SliderMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808CBBD1D0382A5008F2077 /* SliderMenuViewController.swift */; };
+		D808CBC51D038334008F2077 /* SliderMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808CBC31D038334008F2077 /* SliderMenuOption.swift */; };
+		D808CBC61D038334008F2077 /* SliderMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808CBC41D038334008F2077 /* SliderMenuViewController.swift */; };
+		D808CBCB1D038353008F2077 /* SliderMenuAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808CBC81D038353008F2077 /* SliderMenuAnimation.swift */; };
+		D808CBCC1D038353008F2077 /* SliderMenuAnimationDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808CBC91D038353008F2077 /* SliderMenuAnimationDefault.swift */; };
+		D808CBCD1D038353008F2077 /* SliderMenuAnimationSilderOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808CBCA1D038353008F2077 /* SliderMenuAnimationSilderOver.swift */; };
 		D81ED1F91D01E65100AC7795 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED1F81D01E65100AC7795 /* AppDelegate.swift */; };
 		D81ED1FB1D01E65100AC7795 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED1FA1D01E65100AC7795 /* MainViewController.swift */; };
 		D81ED1FE1D01E65100AC7795 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81ED1FC1D01E65100AC7795 /* Main.storyboard */; };
@@ -22,6 +25,21 @@
 		D8E71A211D031DE30082248C /* KIFUITestActor+identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E71A1F1D031DE30082248C /* KIFUITestActor+identifier.swift */; };
 		D8E71A221D031DE30082248C /* QuickSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E71A201D031DE30082248C /* QuickSpec.swift */; };
 		D8E71A241D031E180082248C /* SlideMenuDoviTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E71A231D031E180082248C /* SlideMenuDoviTests.swift */; };
+		D8E9AEED1D0383E300FDDD16 /* AnimatorChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9AEEB1D0383E300FDDD16 /* AnimatorChecker.swift */; };
+		D8E9AEEE1D0383E300FDDD16 /* AnimatorCheckerSliderOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9AEEC1D0383E300FDDD16 /* AnimatorCheckerSliderOver.swift */; };
+		D8E9AEF11D0383EB00FDDD16 /* AnimatorFire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9AEEF1D0383EB00FDDD16 /* AnimatorFire.swift */; };
+		D8E9AEF21D0383EB00FDDD16 /* AnimatorFireSlideOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9AEF01D0383EB00FDDD16 /* AnimatorFireSlideOver.swift */; };
+		D8E9AEF51D0383F400FDDD16 /* AnimatorGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9AEF31D0383F400FDDD16 /* AnimatorGesture.swift */; };
+		D8E9AEF61D0383F400FDDD16 /* AnimatorGestureSlideOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9AEF41D0383F400FDDD16 /* AnimatorGestureSlideOver.swift */; };
+		D8E9AEF91D03840D00FDDD16 /* AnimatorVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9AEF71D03840D00FDDD16 /* AnimatorVector.swift */; };
+		D8E9AEFA1D03840D00FDDD16 /* AnimatorVectorSlideOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9AEF81D03840D00FDDD16 /* AnimatorVectorSlideOver.swift */; };
+		D8E9AEFC1D03842C00FDDD16 /* GlobalVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9AEFB1D03842C00FDDD16 /* GlobalVariable.swift */; };
+		D8E9AEFF1D03844800FDDD16 /* SliderMenuGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9AEFD1D03844800FDDD16 /* SliderMenuGesture.swift */; };
+		D8E9AF001D03844800FDDD16 /* SliderMenuGestureDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9AEFE1D03844800FDDD16 /* SliderMenuGestureDefault.swift */; };
+		D8E9AF031D03845C00FDDD16 /* UIViewController+SilderMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9AF021D03845C00FDDD16 /* UIViewController+SilderMenu.swift */; };
+		D8E9AF081D03846E00FDDD16 /* MenuTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9AF051D03846E00FDDD16 /* MenuTools.swift */; };
+		D8E9AF091D03846E00FDDD16 /* MenuViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9AF061D03846E00FDDD16 /* MenuViewControllers.swift */; };
+		D8E9AF0A1D03846E00FDDD16 /* MenuViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E9AF071D03846E00FDDD16 /* MenuViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +55,11 @@
 /* Begin PBXFileReference section */
 		AF42B5A2E43B725D9DC0C2E1 /* Pods_SlideMenuDoviTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideMenuDoviTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D765790063CC4B1C30AE32C9 /* Pods-SlideMenuDoviTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideMenuDoviTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideMenuDoviTests/Pods-SlideMenuDoviTests.release.xcconfig"; sourceTree = "<group>"; };
-		D808CBBC1D0382A5008F2077 /* SliderMenuOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuOption.swift; path = ../../SlideMenu/SliderMenuOption.swift; sourceTree = "<group>"; };
-		D808CBBD1D0382A5008F2077 /* SliderMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuViewController.swift; path = ../../SlideMenu/SliderMenuViewController.swift; sourceTree = "<group>"; };
+		D808CBC31D038334008F2077 /* SliderMenuOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuOption.swift; path = ../SlideMenu/SliderMenuOption.swift; sourceTree = "<group>"; };
+		D808CBC41D038334008F2077 /* SliderMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuViewController.swift; path = ../SlideMenu/SliderMenuViewController.swift; sourceTree = "<group>"; };
+		D808CBC81D038353008F2077 /* SliderMenuAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuAnimation.swift; path = ../SlideMenu/AnimationType/SliderMenuAnimation.swift; sourceTree = "<group>"; };
+		D808CBC91D038353008F2077 /* SliderMenuAnimationDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuAnimationDefault.swift; path = ../SlideMenu/AnimationType/SliderMenuAnimationDefault.swift; sourceTree = "<group>"; };
+		D808CBCA1D038353008F2077 /* SliderMenuAnimationSilderOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuAnimationSilderOver.swift; path = ../SlideMenu/AnimationType/SliderMenuAnimationSilderOver.swift; sourceTree = "<group>"; };
 		D81ED1F51D01E65100AC7795 /* SlideMenuDovi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideMenuDovi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81ED1F81D01E65100AC7795 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D81ED1FA1D01E65100AC7795 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +78,21 @@
 		D8E71A1F1D031DE30082248C /* KIFUITestActor+identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KIFUITestActor+identifier.swift"; sourceTree = "<group>"; };
 		D8E71A201D031DE30082248C /* QuickSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSpec.swift; sourceTree = "<group>"; };
 		D8E71A231D031E180082248C /* SlideMenuDoviTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuDoviTests.swift; sourceTree = "<group>"; };
+		D8E9AEEB1D0383E300FDDD16 /* AnimatorChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatorChecker.swift; path = ../SlideMenu/Configuration/Anim/AnimatorChecker/AnimatorChecker.swift; sourceTree = "<group>"; };
+		D8E9AEEC1D0383E300FDDD16 /* AnimatorCheckerSliderOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatorCheckerSliderOver.swift; path = ../SlideMenu/Configuration/Anim/AnimatorChecker/AnimatorCheckerSliderOver.swift; sourceTree = "<group>"; };
+		D8E9AEEF1D0383EB00FDDD16 /* AnimatorFire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatorFire.swift; path = ../SlideMenu/Configuration/Anim/AnimatorFire/AnimatorFire.swift; sourceTree = "<group>"; };
+		D8E9AEF01D0383EB00FDDD16 /* AnimatorFireSlideOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatorFireSlideOver.swift; path = ../SlideMenu/Configuration/Anim/AnimatorFire/AnimatorFireSlideOver.swift; sourceTree = "<group>"; };
+		D8E9AEF31D0383F400FDDD16 /* AnimatorGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatorGesture.swift; path = ../SlideMenu/Configuration/Anim/AnimatorGesture/AnimatorGesture.swift; sourceTree = "<group>"; };
+		D8E9AEF41D0383F400FDDD16 /* AnimatorGestureSlideOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatorGestureSlideOver.swift; path = ../SlideMenu/Configuration/Anim/AnimatorGesture/AnimatorGestureSlideOver.swift; sourceTree = "<group>"; };
+		D8E9AEF71D03840D00FDDD16 /* AnimatorVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatorVector.swift; path = ../SlideMenu/Configuration/Anim/AnimatorVector/AnimatorVector.swift; sourceTree = "<group>"; };
+		D8E9AEF81D03840D00FDDD16 /* AnimatorVectorSlideOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatorVectorSlideOver.swift; path = ../SlideMenu/Configuration/Anim/AnimatorVector/AnimatorVectorSlideOver.swift; sourceTree = "<group>"; };
+		D8E9AEFB1D03842C00FDDD16 /* GlobalVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalVariable.swift; path = ../SlideMenu/Configuration/Generic/GlobalVariable.swift; sourceTree = "<group>"; };
+		D8E9AEFD1D03844800FDDD16 /* SliderMenuGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuGesture.swift; path = ../SlideMenu/Configuration/Gesture/SliderMenuGesture.swift; sourceTree = "<group>"; };
+		D8E9AEFE1D03844800FDDD16 /* SliderMenuGestureDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuGestureDefault.swift; path = ../SlideMenu/Configuration/Gesture/SliderMenuGestureDefault.swift; sourceTree = "<group>"; };
+		D8E9AF021D03845C00FDDD16 /* UIViewController+SilderMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+SilderMenu.swift"; path = "../SlideMenu/Extension/UIViewController+SilderMenu.swift"; sourceTree = "<group>"; };
+		D8E9AF051D03846E00FDDD16 /* MenuTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTools.swift; path = ../SlideMenu/Tools/MenuTools.swift; sourceTree = "<group>"; };
+		D8E9AF061D03846E00FDDD16 /* MenuViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewControllers.swift; path = ../SlideMenu/Tools/MenuViewControllers.swift; sourceTree = "<group>"; };
+		D8E9AF071D03846E00FDDD16 /* MenuViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViews.swift; path = ../SlideMenu/Tools/MenuViews.swift; sourceTree = "<group>"; };
 		F304D918C0FE71A87C940B4D /* Pods-SlideMenuDoviTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideMenuDoviTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideMenuDoviTests/Pods-SlideMenuDoviTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,13 +124,36 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D808CBC21D038321008F2077 /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9AF041D03846600FDDD16 /* Tools */,
+				D8E9AF011D03845300FDDD16 /* Extension */,
+				D8E9AEE31D03838D00FDDD16 /* Configuration */,
+				D808CBC71D038340008F2077 /* AnimationType */,
+				D808CBC31D038334008F2077 /* SliderMenuOption.swift */,
+				D808CBC41D038334008F2077 /* SliderMenuViewController.swift */,
+			);
+			name = SlideMenu;
+			sourceTree = "<group>";
+		};
+		D808CBC71D038340008F2077 /* AnimationType */ = {
+			isa = PBXGroup;
+			children = (
+				D808CBC81D038353008F2077 /* SliderMenuAnimation.swift */,
+				D808CBC91D038353008F2077 /* SliderMenuAnimationDefault.swift */,
+				D808CBCA1D038353008F2077 /* SliderMenuAnimationSilderOver.swift */,
+			);
+			name = AnimationType;
+			sourceTree = "<group>";
+		};
 		D81ED1EC1D01E65100AC7795 = {
 			isa = PBXGroup;
 			children = (
+				D808CBC21D038321008F2077 /* SlideMenu */,
 				D81ED1F61D01E65100AC7795 /* Products */,
 				D81ED1F71D01E65100AC7795 /* SlideMenuDovi */,
 				D81ED20C1D01E65100AC7795 /* SlideMenuDoviTests */,
-				D81ED2281D01E69200AC7795 /* SliderMenu */,
 				35C2AB84157A16B64FE26848 /* Pods */,
 				E3716366DCAFBF5CA35C5CCE /* Frameworks */,
 				D8E71A181D031D200082248C /* SlideMenuDovi-Bridging-Header.h */,
@@ -138,103 +197,6 @@
 			path = SlideMenuDoviTests;
 			sourceTree = "<group>";
 		};
-		D81ED2281D01E69200AC7795 /* SliderMenu */ = {
-			isa = PBXGroup;
-			children = (
-				D808CBBC1D0382A5008F2077 /* SliderMenuOption.swift */,
-				D808CBBD1D0382A5008F2077 /* SliderMenuViewController.swift */,
-				D81ED23C1D01E70500AC7795 /* AnimationType */,
-				D81ED22D1D01E6A900AC7795 /* Configuration */,
-				D81ED22F1D01E6B900AC7795 /* Extension */,
-				D81ED22E1D01E6B600AC7795 /* Tools */,
-			);
-			path = SliderMenu;
-			sourceTree = "<group>";
-		};
-		D81ED22D1D01E6A900AC7795 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				D81ED23B1D01E6EB00AC7795 /* Anim */,
-				D81ED23A1D01E6E800AC7795 /* Generic */,
-				D81ED2311D01E6BE00AC7795 /* Gesture */,
-			);
-			path = Configuration;
-			sourceTree = "<group>";
-		};
-		D81ED22E1D01E6B600AC7795 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		D81ED22F1D01E6B900AC7795 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		D81ED2301D01E6BC00AC7795 /* AnimatorVector */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AnimatorVector;
-			sourceTree = "<group>";
-		};
-		D81ED2311D01E6BE00AC7795 /* Gesture */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Gesture;
-			sourceTree = "<group>";
-		};
-		D81ED23A1D01E6E800AC7795 /* Generic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Generic;
-			sourceTree = "<group>";
-		};
-		D81ED23B1D01E6EB00AC7795 /* Anim */ = {
-			isa = PBXGroup;
-			children = (
-				D81ED24A1D01E73400AC7795 /* AnimatorChecker */,
-				D81ED2491D01E73200AC7795 /* AnimatorFire */,
-				D81ED24F1D01E74C00AC7795 /* AnimatorGesture */,
-				D81ED2301D01E6BC00AC7795 /* AnimatorVector */,
-			);
-			path = Anim;
-			sourceTree = "<group>";
-		};
-		D81ED23C1D01E70500AC7795 /* AnimationType */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AnimationType;
-			sourceTree = "<group>";
-		};
-		D81ED2491D01E73200AC7795 /* AnimatorFire */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AnimatorFire;
-			sourceTree = "<group>";
-		};
-		D81ED24A1D01E73400AC7795 /* AnimatorChecker */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AnimatorChecker;
-			sourceTree = "<group>";
-		};
-		D81ED24F1D01E74C00AC7795 /* AnimatorGesture */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AnimatorGesture;
-			sourceTree = "<group>";
-		};
 		D8E71A1E1D031D940082248C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +204,98 @@
 				D8E71A201D031DE30082248C /* QuickSpec.swift */,
 			);
 			name = Extension;
+			sourceTree = "<group>";
+		};
+		D8E9AEE31D03838D00FDDD16 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9AEE61D03839F00FDDD16 /* Gesture */,
+				D8E9AEE51D03839900FDDD16 /* Generic */,
+				D8E9AEE41D03839500FDDD16 /* Anim */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		D8E9AEE41D03839500FDDD16 /* Anim */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9AEEA1D0383D500FDDD16 /* AnimatorVector */,
+				D8E9AEE91D0383CC00FDDD16 /* AnimatorGesture */,
+				D8E9AEE81D0383BF00FDDD16 /* AnimatorFire */,
+				D8E9AEE71D0383A700FDDD16 /* AnimatorChecker */,
+			);
+			name = Anim;
+			sourceTree = "<group>";
+		};
+		D8E9AEE51D03839900FDDD16 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9AEFB1D03842C00FDDD16 /* GlobalVariable.swift */,
+			);
+			name = Generic;
+			sourceTree = "<group>";
+		};
+		D8E9AEE61D03839F00FDDD16 /* Gesture */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9AEFD1D03844800FDDD16 /* SliderMenuGesture.swift */,
+				D8E9AEFE1D03844800FDDD16 /* SliderMenuGestureDefault.swift */,
+			);
+			name = Gesture;
+			sourceTree = "<group>";
+		};
+		D8E9AEE71D0383A700FDDD16 /* AnimatorChecker */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9AEEB1D0383E300FDDD16 /* AnimatorChecker.swift */,
+				D8E9AEEC1D0383E300FDDD16 /* AnimatorCheckerSliderOver.swift */,
+			);
+			name = AnimatorChecker;
+			sourceTree = "<group>";
+		};
+		D8E9AEE81D0383BF00FDDD16 /* AnimatorFire */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9AEEF1D0383EB00FDDD16 /* AnimatorFire.swift */,
+				D8E9AEF01D0383EB00FDDD16 /* AnimatorFireSlideOver.swift */,
+			);
+			name = AnimatorFire;
+			sourceTree = "<group>";
+		};
+		D8E9AEE91D0383CC00FDDD16 /* AnimatorGesture */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9AEF31D0383F400FDDD16 /* AnimatorGesture.swift */,
+				D8E9AEF41D0383F400FDDD16 /* AnimatorGestureSlideOver.swift */,
+			);
+			name = AnimatorGesture;
+			sourceTree = "<group>";
+		};
+		D8E9AEEA1D0383D500FDDD16 /* AnimatorVector */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9AEF71D03840D00FDDD16 /* AnimatorVector.swift */,
+				D8E9AEF81D03840D00FDDD16 /* AnimatorVectorSlideOver.swift */,
+			);
+			name = AnimatorVector;
+			sourceTree = "<group>";
+		};
+		D8E9AF011D03845300FDDD16 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9AF021D03845C00FDDD16 /* UIViewController+SilderMenu.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		D8E9AF041D03846600FDDD16 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D8E9AF051D03846E00FDDD16 /* MenuTools.swift */,
+				D8E9AF061D03846E00FDDD16 /* MenuViewControllers.swift */,
+				D8E9AF071D03846E00FDDD16 /* MenuViews.swift */,
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 		E3716366DCAFBF5CA35C5CCE /* Frameworks */ = {
@@ -404,14 +458,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D808CBBF1D0382A5008F2077 /* SliderMenuViewController.swift in Sources */,
-				D808CBBE1D0382A5008F2077 /* SliderMenuOption.swift in Sources */,
+				D808CBCD1D038353008F2077 /* SliderMenuAnimationSilderOver.swift in Sources */,
+				D808CBC61D038334008F2077 /* SliderMenuViewController.swift in Sources */,
+				D8E9AF031D03845C00FDDD16 /* UIViewController+SilderMenu.swift in Sources */,
+				D8E9AEEE1D0383E300FDDD16 /* AnimatorCheckerSliderOver.swift in Sources */,
+				D808CBC51D038334008F2077 /* SliderMenuOption.swift in Sources */,
 				D81ED25D1D01E87D00AC7795 /* LeftViewController.swift in Sources */,
 				D81ED1FB1D01E65100AC7795 /* MainViewController.swift in Sources */,
+				D8E9AF091D03846E00FDDD16 /* MenuViewControllers.swift in Sources */,
+				D8E9AEFC1D03842C00FDDD16 /* GlobalVariable.swift in Sources */,
+				D8E9AEFF1D03844800FDDD16 /* SliderMenuGesture.swift in Sources */,
+				D808CBCC1D038353008F2077 /* SliderMenuAnimationDefault.swift in Sources */,
+				D8E9AEF21D0383EB00FDDD16 /* AnimatorFireSlideOver.swift in Sources */,
+				D8E9AEFA1D03840D00FDDD16 /* AnimatorVectorSlideOver.swift in Sources */,
+				D8E9AF0A1D03846E00FDDD16 /* MenuViews.swift in Sources */,
 				D81ED2611D01E90A00AC7795 /* RootViewController.swift in Sources */,
+				D8E9AEF11D0383EB00FDDD16 /* AnimatorFire.swift in Sources */,
+				D8E9AF001D03844800FDDD16 /* SliderMenuGestureDefault.swift in Sources */,
+				D8E9AEF51D0383F400FDDD16 /* AnimatorGesture.swift in Sources */,
+				D8E9AF081D03846E00FDDD16 /* MenuTools.swift in Sources */,
+				D8E9AEF91D03840D00FDDD16 /* AnimatorVector.swift in Sources */,
+				D8E9AEF61D0383F400FDDD16 /* AnimatorGestureSlideOver.swift in Sources */,
 				D8E71A171D0223880082248C /* ListAnimationViewController.swift in Sources */,
+				D8E9AEED1D0383E300FDDD16 /* AnimatorChecker.swift in Sources */,
 				D81ED25F1D01E8AE00AC7795 /* RightViewController.swift in Sources */,
 				D81ED1F91D01E65100AC7795 /* AppDelegate.swift in Sources */,
+				D808CBCB1D038353008F2077 /* SliderMenuAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
