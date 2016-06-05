@@ -3,3 +3,5 @@ scheme: SlideMenuDovi
 xcodeproj: Example/SlideMenuDovi.xcodeproj/
 workspace: Example/SlideMenuDovi.xcworkspace/
 source_directory: SlideMenu/
+ignore:
+  - Example/*
