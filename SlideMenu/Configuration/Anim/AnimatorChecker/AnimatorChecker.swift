@@ -9,7 +9,7 @@
 import Foundation
 
 /**
- *  Check if menu open or close
+ *  Check if menu is open or close
  */
 public protocol AnimatorChecker: GlobalVariables {
     func isLeftSideOpen() -> Bool
@@ -22,15 +22,15 @@ extension AnimatorChecker {
     public func isLeftSideOpen() -> Bool {
         return self.menuViews.mainContainerView.frame.origin.x == SliderMenuOptions.leftViewWidth
     }
-    
+
     public func isLeftSideHidden() -> Bool {
         return self.menuViews.mainContainerView.frame.origin.x == 0
     }
-    
+
     public func isRightSideOpen() -> Bool {
         return self.menuViews.mainContainerView.frame.origin.x == -SliderMenuOptions.rightViewWidth
     }
-    
+
     public func isRightSideHidden() -> Bool {
         return self.menuViews.mainContainerView.frame.origin.x == 0
     }

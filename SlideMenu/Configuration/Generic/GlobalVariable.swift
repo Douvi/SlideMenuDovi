@@ -9,6 +9,9 @@
 import Foundation
 import UIKit
 
+/**
+ *  Give you access to all you need
+ */
 public protocol GlobalVariables: class {
     var rootView: UIView { get }
     var menuTools: MenuTools { get }
@@ -27,49 +30,49 @@ extension GlobalVariables {
             return menuTools.rootView
         }
     }
-    
+
     public var menuTools: MenuTools {
         get {
             return MenuTools.sharedInstance
         }
     }
-    
+
     public var menuViews: MenuViews {
         get {
             return menuTools.menuViews
         }
     }
-    
+
     public var menuViewControllers: MenuViewControllers {
         get {
             return menuTools.menuViewControllers
         }
     }
-    
+
     public var animationType: SliderMenuAnimation {
         get {
             return SliderMenuOptions.animationType
         }
     }
-    
+
     public var gesture: SliderMenuGesture {
         get {
             return animationType.silderMenuGesture
         }
     }
-    
+
     public var leftViewController: UIViewController? {
         get {
             return menuViewControllers.leftViewController
         }
     }
-    
+
     public var rightViewController: UIViewController? {
         get {
             return menuViewControllers.rightViewController
         }
     }
-    
+
     public var mainViewController: UIViewController? {
         get {
             return menuViewControllers.mainViewController
