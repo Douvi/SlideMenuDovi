@@ -76,6 +76,8 @@ Done your project is setup with a SlideMenu!!!
   SliderMenuOption.animationType = SliderMenuAnimationDefault()
 ```
 
+[logo]: anim_default.png
+
 2. Android animation, left or right side will slider over center view
 ```
   SliderMenuOption.animationType = SliderMenuAnimationSliderOver()
