@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SlideMenuDovi'
-  s.version          = '0.1.1'
-  s.summary          = 'SlideMenuDovi will help you to create your own animation if needed'
+  s.version          = '0.1.0'
+  s.summary          = 'A short description of SlideMenuDovi.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,16 +17,16 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.homepage         = 'https://github.com/Douvi/SlideMenuDovi'
+  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/SlideMenuDovi'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = 'Edouard Roussillon'
-  s.source           = { :git => 'https://github.com/Douvi/SlideMenuDovi.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Douvi/SlideMenuDovi.git', :tag => "v#{s.version}" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SlideMenu/**/*.swift'
+  s.source_files = 'SlideMenu'
 
   # s.resource_bundles = {
   #   'SlideMenuDovi' => ['SlideMenuDovi/Assets/*.png']

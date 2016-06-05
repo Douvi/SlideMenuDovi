@@ -7,51 +7,54 @@
 
 ## Why an other Slide Menu!!!
 
-If you want to create a specific Animation, aside the current animations, this lib is made for you :).
+If you want to create a specific Animation, aside the current animations, **SlideMenuDovi** is made for you :).
 
-## Who use **SlideMenuDovi**
+## How use **SlideMenuDovi**
 
-First you need to look at **SliderMenuOptions**, that will give you a full list of options (with, opacity, shadow, status bar, etc)
+First you need to look at **SliderMenuOptions**, this structure will give you a full list of options (width, opacity, shadow, status bar, etc)
 
 ```
 public struct SliderMenuOptions {
-    // you will define the left side
+    // Define the left side
     public static var leftViewWidth: CGFloat = 242.0
     public static var leftBezelWidth: CGFloat = 16.0
     public static var leftPanFromBezel: Bool = true
 
-    // you will define the right side
+    // Define the right side
     public static var rightViewWidth: CGFloat = 242.0
     public static var rightBezelWidth: CGFloat = 16.0
     public static var rightPanFromBezel: Bool = true
 
-    // the type of animation
+    // Type of animation
     public static var animationType: SliderMenuAnimation = SliderMenuAnimationDefault()
 
-    // The menu will not open or close under X pixel
+    // Menu will open or close only after passing this value
     public static var pointOfNoReturnWidth: CGFloat = 44.0
 
-    // opacity between the MainViewController and the Menu (Left or Right)
+    // Opacity of the view between the MainViewController and the Menu (Left or Right)
     public static var contentViewOpacity: CGFloat = 0.0
 
-    // The sliding view will be set with a shadow
+    // Sliding view will be set with a shadow
     public static var shadowOpacity: CGFloat = 1.0
     public static var shadowRadius: CGFloat = 12
     public static var shadowOffset: CGSize = CGSizeMake(0,0)
     public static var shadowColor: UIColor = UIColor.blackColor()
 
+    // Animation duration
     public static var animationDuration: CGFloat = 0.4
 
-    // status bar options
+    // Status bar options
     public static var hideStatusBar: Bool = false
     public static var showsStatusBarBackground: Bool = false
     public static var statusBarBackgroundColor: UIColor = UIColor.clearColor()
 }
 ```
 
-Then you need to override **SliderMenuViewController** like that
+Then you need to override **SliderMenuViewController** like this:
 
 ```
+import SlideMenuDovi
+
 class YourRootViewController: SliderMenuViewController {
 
   override func viewDidLoad() {
@@ -71,63 +74,171 @@ Done your project is setup with a SlideMenu!!!
 
 ## Animations available
 
-1. Classic animation MainViewController will slide
+1. Classic animation, main view will slide
 ```
-  SliderMenuOption.animationType = SliderMenuAnimationDefault()
+SliderMenuOption.animationType = SliderMenuAnimationDefault()
 ```
 
 ![alt text]( https://github.com/Douvi/SlideMenuDovi/blob/develop/anim_default.gif "default")
 
 2. Android animation, left or right side will slider over center view
 ```
-  SliderMenuOption.animationType = SliderMenuAnimationSliderOver()
+SliderMenuOption.animationType = SliderMenuAnimationSliderOver()
 ```
 
 ![alt text]( https://github.com/Douvi/SlideMenuDovi/blob/develop/anim_slide_over.gif "slide over")
 
 ## Custom Animation
 
-You are not happy with those animations, do not worry daddy is here to help you :).
+You are not happy with the 2 default animations, do not worry daddy is here to help you :).
 To create your own Animation you just need to implement **SliderMenuAnimation** which implements 5 protocols (**AnimatorChecker**, **AnimatorFire**, **AnimatorGesture**, **AnimatorVector**, **GlobalVariables**).
+
+**SliderMenuAnimationX**
+
+```
+public class SliderMenuAnimationX: NSObject, SliderMenuAnimation {
+    public var silderMenuGesture: SliderMenuGesture {
+        get {
+            return SliderMenuGestureDefault.sharedInstance
+        }
+    }
+
+    /**
+     *  Change the order of those views
+     */
+    public func orderList() {
+        rootView.addSubview(self.menuViews.mainContainerView)
+        rootView.addSubview(self.menuViews.opacityView)
+        rootView.addSubview(self.menuViews.rightContainerView)
+        rootView.addSubview(self.menuViews.leftContainerView)
+
+        if SliderMenuOptions.showsStatusBarBackground {
+            rootView.addSubview(self.menuViews.statusBarView)
+        }
+
+    }
+}
+```
+
+If you want to override any protocol there is 2 ways:
+
+### 1 way - I do not have time
+
+create a new file into 'AnimationType/SliderMenuAnimationX.swift'. Extend one of the **SliderMenuAnination** (can be **SliderMenuAnimationDefault** or **SliderMenuAnimationSliderOver**) and override all the methods you need.
+
+```
+public class SliderMenuAnimationX: NSObject, SliderMenuAnimation {
+    public var silderMenuGesture: SliderMenuGesture {
+        get {
+            return SliderMenuGestureDefault.sharedInstance
+        }
+    }
+
+    /**
+     *  Change the order of those views
+     */
+    public func orderList() {
+        self.rootView.addSubview(self.menuViews.mainContainerView)
+        self.rootView.addSubview(self.menuViews.opacityView)
+        self.rootView.addSubview(self.menuViews.rightContainerView)
+        self.rootView.addSubview(self.menuViews.leftContainerView)
+
+        if SliderMenuOptions.showsStatusBarBackground {
+            self.rootView.addSubview(self.menuViews.statusBarView)
+        }
+
+    }
+
+    public func isLeftSideOpen() -> Bool {
+      // set the right result by using **GlobalVariables**'s methods (**SliderMenuAnimation** all ready implement **GlobalVariables**)
+    }
+}
+```
+
+### 2 way - I do have time
+
+create a new file into 'AnimatorChecker/AnimatorCheckerX.swift' which will implement **AnimatorChecker** or **AnimatorCheckerSliderOver**. You can do the same with all others protocols (**AnimatorFire**, **AnimatorGesture**, **AnimatorVector**, **GlobalVariables**)
+
+```
+public protocol AnimatorCheckerX: AnimatorChecker {}
+
+extension AnimatorCheckerX {
+
+  public func isLeftSideOpen() -> Bool {
+    // set the right result by using **GlobalVariables**'s methods (**AnimatorChecker** all ready implement **GlobalVariables**)
+  }
+
+}
+```
+
+create a new file into 'AnimationType/SliderMenuAnimationX.swift'. Extend one of the **SliderMenuAnination** (can be **SliderMenuAnimationDefault** or **SliderMenuAnimationSliderOver**) and extend too the new protocol you just create **AnimatorCheckerX**
+
+```
+public class SliderMenuAnimationX: NSObject, SliderMenuAnimation, AnimatorCheckerX {
+    public var silderMenuGesture: SliderMenuGesture {
+        get {
+            return SliderMenuGestureDefault.sharedInstance
+        }
+    }
+
+    /**
+     *  Change the order of those views
+     */
+    public func orderList() {
+        self.rootView.addSubview(self.menuViews.mainContainerView)
+        self.rootView.addSubview(self.menuViews.opacityView)
+        self.rootView.addSubview(self.menuViews.rightContainerView)
+        self.rootView.addSubview(self.menuViews.leftContainerView)
+
+        if SliderMenuOptions.showsStatusBarBackground {
+            self.rootView.addSubview(self.menuViews.statusBarView)
+        }
+    }
+}
+```
+
+Done you just create your own Animation :)
+
+### More Details
 
 **AnimatorChecker**
 
 ```
-  /**
-   *  Check if menu is open or close
-   */
-  public protocol AnimatorChecker: GlobalVariables {
-      func isLeftSideOpen() -> Bool
-      func isLeftSideHidden() -> Bool
-      func isRightSideOpen() -> Bool
-      func isRightSideHidden() -> Bool
-  }
+/**
+ *  Check if menu is open or close
+ */
+public protocol AnimatorChecker: GlobalVariables {
+    func isLeftSideOpen() -> Bool
+    func isLeftSideHidden() -> Bool
+    func isRightSideOpen() -> Bool
+    func isRightSideHidden() -> Bool
+}
 ```
 
 **AnimatorFire**
 
 ```
-  /**
-   *  It will fire the animation
-   */
-  public protocol AnimatorFire: GlobalVariables {
-      func toggleLeft()
-      func toggleRight()
+/**
+ *  It will fire the animation
+ */
+public protocol AnimatorFire: GlobalVariables {
+    func toggleLeft()
+    func toggleRight()
 
-      func closeLeft()
-      func closeRight()
+    func closeLeft()
+    func closeRight()
 
-      func openLeft()
-      func openRight()
+    func openLeft()
+    func openRight()
 
-      func addShadowToView(targetContainerView: UIView)
-      func removeShadow(targetContainerView: UIView)
+    func addShadowToView(targetContainerView: UIView)
+    func removeShadow(targetContainerView: UIView)
 
-      func animateLeftSideToOpen()
-      func animateLeftSideToClose()
-      func animateRightSideToOpen()
-      func animateRightSideToClose()
-  }
+    func animateLeftSideToOpen()
+    func animateLeftSideToClose()
+    func animateRightSideToOpen()
+    func animateRightSideToClose()
+}
 ```
 
 **AnimatorGesture**
@@ -169,7 +280,7 @@ public protocol AnimatorVector: GlobalVariables {
 }
 ```
 
-All those Protocols are implementing **GlobalVariables** which will help you to get access to all information you need.
+All those Protocols implement **GlobalVariables** which will help you to get access to all information you need.
 
 ```
 /**
@@ -193,6 +304,8 @@ public protocol GlobalVariables: class {
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+SlideMenuDovi is using swift 2.2
 
 ## Installation
 
