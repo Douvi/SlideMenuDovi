@@ -21,4 +21,4 @@ fi
 
 eval "cd .."
 eval "slather"
-eval "bash <(curl -s https://codecov.io/bash) -f ./cobertura.xml"
+eval "bash <(curl -s https://codecov.io/bash) -f cobertura.xml"
