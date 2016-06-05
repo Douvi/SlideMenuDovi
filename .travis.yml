@@ -2,6 +2,3 @@ language: objective-c
 osx_image: xcode7.3
 
 script: ./run_test.sh
-after_success:
-  - slather
-  - bash <(curl -s https://codecov.io/bash) -f ./cobertura.xml
