@@ -18,3 +18,7 @@ if [[ $TRAVIS || $XCPRETTY_INSTALLED == 0 ]]; then
 else
   eval "$TEST_CMD"
 fi
+
+eval "cd .."
+eval "slather"
+eval "bash <(curl -s https://codecov.io/bash) -f ./cobertura.xml"

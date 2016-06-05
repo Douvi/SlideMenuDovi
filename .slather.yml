@@ -4,4 +4,14 @@ xcodeproj: Example/SlideMenuDovi.xcodeproj/
 workspace: Example/SlideMenuDovi.xcworkspace/
 source_directory: SlideMenu/
 ignore:
-  - Example/*
+  - Example/SlideMenuDovi/*
+  - Example/SlideMenuDoviTests/*
+  - Example/Gemfile
+  - Example/Gemfile.lock
+  - Example/LICENSE
+  - Example/Pods/*
+  - Example/Podfile
+  - Example/Podfile.lock
+  - Example/README.md
+  - Example/SlideMenuDovi-Bridging-Header.h
+  - Example/SlideMenuDoviTests-Bridging-Header.h
