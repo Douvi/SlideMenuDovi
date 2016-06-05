@@ -4,7 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SlideMenuDovi.svg?style=flat)](http://cocoapods.org/pods/SlideMenuDovi)
 [![License](https://img.shields.io/cocoapods/l/SlideMenuDovi.svg?style=flat)](http://cocoapods.org/pods/SlideMenuDovi)
 [![Platform](https://img.shields.io/cocoapods/p/SlideMenuDovi.svg?style=flat)](http://cocoapods.org/pods/SlideMenuDovi)
-[![codecov](https://codecov.io/gh/Douvi/SlideMenuDovi/branch/master/graph/badge.svg)](https://codecov.io/gh/Douvi/SlideMenuDovi)
+[![codecov](https://img.shields.io/codecov/c/github/Douvi/SlideMenuDovi.svg?maxAge=2592000)](https://codecov.io/gh/Douvi/SlideMenuDovi)
 
 ## Why an other Slide Menu!!!
 
