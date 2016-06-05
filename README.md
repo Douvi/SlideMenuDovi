@@ -76,14 +76,14 @@ Done your project is setup with a SlideMenu!!!
   SliderMenuOption.animationType = SliderMenuAnimationDefault()
 ```
 
-[logo]: https://github.com/Douvi/SlideMenuDovi/blob/develop/anim_default.gif "default"
+![alt text]( https://github.com/Douvi/SlideMenuDovi/blob/develop/anim_default.gif "default")
 
 2. Android animation, left or right side will slider over center view
 ```
   SliderMenuOption.animationType = SliderMenuAnimationSliderOver()
 ```
 
-[logo]: https://github.com/Douvi/SlideMenuDovi/blob/develop/anim_slide_over.gif "slide over"
+![alt text]( https://github.com/Douvi/SlideMenuDovi/blob/develop/anim_slide_over.gif "slide over")
 
 ## Custom Animation
 
