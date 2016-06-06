@@ -5,6 +5,7 @@ workspace="SlideMenuDovi.xcworkspace"
 destination="platform=iOS Simulator,name=iPhone 6S,OS=9.3"
 
 eval "cd Example"
+eval "gem install bundler"
 eval "bundle install"
 eval "pod install"
 

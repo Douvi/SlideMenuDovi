@@ -20,22 +20,15 @@ public class SliderMenuViewController: UIViewController, GlobalVariables {
     }
 
     public func initPanel(mainViewController: UIViewController, leftMenuViewController: UIViewController) {
-        self.menuViewControllers.mainViewController = mainViewController
-        self.menuViewControllers.leftViewController = leftMenuViewController
-        self.initView()
+        self.initViewController(mainViewController, leftMenuViewController: leftMenuViewController, rightMenuViewController: nil)
     }
     
     public func initPanel(mainViewController: UIViewController, rightMenuViewController: UIViewController) {
-        self.menuViewControllers.mainViewController = mainViewController
-        self.menuViewControllers.rightViewController = rightMenuViewController
-        self.initView()
+        self.initViewController(mainViewController, leftMenuViewController: nil, rightMenuViewController: rightMenuViewController)
     }
     
     public func initPanel(mainViewController: UIViewController, leftMenuViewController: UIViewController, rightMenuViewController: UIViewController) {
-        self.menuViewControllers.mainViewController = mainViewController
-        self.menuViewControllers.leftViewController = leftMenuViewController
-        self.menuViewControllers.rightViewController = rightMenuViewController
-        self.initView()
+        self.initViewController(mainViewController, leftMenuViewController: leftMenuViewController, rightMenuViewController: rightMenuViewController)
     }
 
     public override func viewDidLoad() {
@@ -144,15 +137,22 @@ public class SliderMenuViewController: UIViewController, GlobalVariables {
     //
     // MARK: TO be override
     //
-    
-    public func track(trackAction: TrackAction) {
-        // function is for tracking
-        // Please to override it if necessary
-    }
+//    
+//    public func track(trackAction: TrackAction) {
+//        // function is for tracking
+//        // Please to override it if necessary
+//    }
     
     //
     // MARK: Private
     //
+    
+    private func initViewController(mainViewController: UIViewController, leftMenuViewController: UIViewController?, rightMenuViewController: UIViewController?) {
+        self.menuViewControllers.mainViewController = mainViewController
+        self.menuViewControllers.leftViewController = leftMenuViewController
+        self.menuViewControllers.rightViewController = rightMenuViewController
+        self.initView()
+    }
     
     private func initView() {
         self.menuTools.rootView = self.view
