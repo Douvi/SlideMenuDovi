@@ -17,6 +17,7 @@ public class SlideMenuDoviTests: QuickSpec {
     private var navRootViewController: UINavigationController!
     private var listAnimationViewController: ListAnimationViewController!
     private var rootViewController: RootViewController!
+    private var mainViewController: MainViewController!
     
     private let listButtonAnimDefault = "list_button_anim_default"
     private let listButtonAnimSliderOver = "list_button_anim_slider_over"
@@ -48,35 +49,35 @@ public class SlideMenuDoviTests: QuickSpec {
                 
                 it("open and close left side by tap") {
                     self.clickButton(self.mainButtonLeft)
-                    expect(self.rootViewController.isSlideMenuLeftOpen()).to(equal(true))
+                    expect(self.mainViewController.isSlideMenuLeftOpen()).to(equal(true))
                     self.clickRightSide()
-                    expect(self.rootViewController.isSlideMenuLeftOpen()).to(equal(false))
+                    expect(self.mainViewController.isSlideMenuLeftOpen()).to(equal(false))
                 }
                 
                 it("open and close left side by swipe") {
                     self.swipeLeftToRight()
                     self.wait(seconds: 2)
-                    expect(self.rootViewController.isSlideMenuLeftOpen()).to(equal(true))
+                    expect(self.mainViewController.isSlideMenuLeftOpen()).to(equal(true))
                     self.tester.swipeViewWithAccessibilityIdentifier(self.rootViewRoot, inDirection: KIFSwipeDirection.Left)
                     self.wait(seconds: 2)
-                    expect(self.rootViewController.isSlideMenuLeftOpen()).to(equal(false))
+                    expect(self.mainViewController.isSlideMenuLeftOpen()).to(equal(false))
                 }
 
                 it("open and close right side by tap") {
                     self.clickButton(self.mainButtonRight)
                     self.wait()
-                    expect(self.rootViewController.isSlideMenuRightOpen()).to(equal(true))
+                    expect(self.mainViewController.isSlideMenuRightOpen()).to(equal(true))
                     self.clickLeftSide()
-                    expect(self.rootViewController.isSlideMenuRightOpen()).to(equal(false))
+                    expect(self.mainViewController.isSlideMenuRightOpen()).to(equal(false))
                 }
 
                 it("open and close right side by swipe") {
                     self.swipeRightToLeft()
                     self.wait()
-                    expect(self.rootViewController.isSlideMenuRightOpen()).to(equal(true))
+                    expect(self.mainViewController.isSlideMenuRightOpen()).to(equal(true))
                     self.tester.swipeViewWithAccessibilityIdentifier(self.rootViewRoot, inDirection: KIFSwipeDirection.Right)
                     self.wait()
-                    expect(self.rootViewController.isSlideMenuRightOpen()).to(equal(false))
+                    expect(self.mainViewController.isSlideMenuRightOpen()).to(equal(false))
                 }
             }
             
@@ -98,35 +99,88 @@ public class SlideMenuDoviTests: QuickSpec {
                 
                 it("open and close left side by tap") {
                     self.clickButton(self.mainButtonLeft)
-                    expect(self.rootViewController.isSlideMenuLeftOpen()).to(equal(true))
+                    expect(self.mainViewController.isSlideMenuLeftOpen()).to(equal(true))
                     self.clickRightSide()
-                    expect(self.rootViewController.isSlideMenuLeftOpen()).to(equal(false))
+                    expect(self.mainViewController.isSlideMenuLeftOpen()).to(equal(false))
                 }
                 
                 it("open and close left side by swipe") {
                     self.swipeLeftToRight()
                     self.wait(seconds: 2)
-                    expect(self.rootViewController.isSlideMenuLeftOpen()).to(equal(true))
+                    expect(self.mainViewController.isSlideMenuLeftOpen()).to(equal(true))
                     self.tester.swipeViewWithAccessibilityIdentifier(self.rootViewRoot, inDirection: KIFSwipeDirection.Left)
                     self.wait(seconds: 2)
-                    expect(self.rootViewController.isSlideMenuLeftOpen()).to(equal(false))
+                    expect(self.mainViewController.isSlideMenuLeftOpen()).to(equal(false))
                 }
                 
                 it("open and close right side by tap") {
                     self.clickButton(self.mainButtonRight)
                     self.wait()
-                    expect(self.rootViewController.isSlideMenuRightOpen()).to(equal(true))
+                    expect(self.mainViewController.isSlideMenuRightOpen()).to(equal(true))
                     self.clickLeftSide()
-                    expect(self.rootViewController.isSlideMenuRightOpen()).to(equal(false))
+                    expect(self.mainViewController.isSlideMenuRightOpen()).to(equal(false))
                 }
                 
                 it("open and close right side by swipe") {
                     self.swipeRightToLeft()
                     self.wait()
-                    expect(self.rootViewController.isSlideMenuRightOpen()).to(equal(true))
+                    expect(self.mainViewController.isSlideMenuRightOpen()).to(equal(true))
                     self.tester.swipeViewWithAccessibilityIdentifier(self.rootViewRoot, inDirection: KIFSwipeDirection.Right)
                     self.wait()
-                    expect(self.rootViewController.isSlideMenuRightOpen()).to(equal(false))
+                    expect(self.mainViewController.isSlideMenuRightOpen()).to(equal(false))
+                }
+            }
+    
+            describe("Fire by code") {
+                
+                beforeEach {
+                    self.startViewController()
+                    self.clickButton(self.listButtonAnimSliderOver)
+                    self.wait()
+                    self.initRootViewController()
+                }
+                
+                afterEach {
+                    self.clickButton(self.mainButtonClose)
+                    self.wait()
+                    let vc = self.listAnimationViewController.presentedViewController
+                    expect(vc).to(beNil())
+                }
+                
+                it("toggle left slider") {
+                    self.mainViewController.toggleSlideMenuLeft()
+                    self.wait()
+                    expect(self.mainViewController.isSlideMenuLeftOpen()).to(equal(true))
+                    self.mainViewController.toggleSlideMenuLeft()
+                    self.wait()
+                    expect(self.mainViewController.isSlideMenuLeftOpen()).to(equal(false))
+                }
+                
+                it("toggle right slider") {
+                    self.mainViewController.toggleSlideMenuRight()
+                    self.wait()
+                    expect(self.mainViewController.isSlideMenuRightOpen()).to(equal(true))
+                    self.mainViewController.toggleSlideMenuRight()
+                    self.wait()
+                    expect(self.mainViewController.isSlideMenuRightOpen()).to(equal(false))
+                }
+                
+                it("toggle and close left slider") {
+                    self.mainViewController.toggleSlideMenuLeft()
+                    self.wait()
+                    expect(self.mainViewController.isSlideMenuLeftOpen()).to(equal(true))
+                    self.mainViewController.closeSlideMenuLeft()
+                    self.wait()
+                    expect(self.mainViewController.isSlideMenuLeftOpen()).to(equal(false))
+                }
+                
+                it("toggle and close right slider") {
+                    self.mainViewController.toggleSlideMenuRight()
+                    self.wait()
+                    expect(self.mainViewController.isSlideMenuRightOpen()).to(equal(true))
+                    self.mainViewController.closeSlideMenuRight()
+                    self.wait()
+                    expect(self.mainViewController.isSlideMenuRightOpen()).to(equal(false))
                 }
             }
         }
@@ -182,6 +236,16 @@ public class SlideMenuDoviTests: QuickSpec {
     
     private func initRootViewController() {
         self.rootViewController = self.listAnimationViewController.presentedViewController as? RootViewController
+        let navMainViewController = self.rootViewController.mainViewController as? UINavigationController
+        self.mainViewController = navMainViewController?.viewControllers.last as? MainViewController
+        
+        expect(self.mainViewController).toNot(beNil())
+        
+        let leftViewController = self.rootViewController.leftViewController as? LeftViewController
+        expect(leftViewController).toNot(beNil())
+        
+        let rightViewController = self.rootViewController.rightViewController as? RightViewController
+        expect(rightViewController).toNot(beNil())
     }
     
     private func startViewController() {

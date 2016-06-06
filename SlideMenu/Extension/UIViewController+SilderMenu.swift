@@ -23,16 +23,6 @@ extension UIViewController {
         return nil
     }
     
-    public func addLeftBarButtonWithImage(buttonImage: UIImage) {
-        let leftButton: UIBarButtonItem = UIBarButtonItem(image: buttonImage, style: UIBarButtonItemStyle.Plain, target: self, action: #selector(UIViewController.toggleSlideMenuLeft))
-        navigationItem.leftBarButtonItem = leftButton
-    }
-    
-    public func addRightBarButtonWithImage(buttonImage: UIImage) {
-        let rightButton: UIBarButtonItem = UIBarButtonItem(image: buttonImage, style: UIBarButtonItemStyle.Plain, target: self, action: #selector(UIViewController.toggleSlideMenuRight))
-        navigationItem.rightBarButtonItem = rightButton
-    }
-    
     public func toggleSlideMenuLeft() {
         slideMenuController()?.toggleSlideMenuLeft()
     }
