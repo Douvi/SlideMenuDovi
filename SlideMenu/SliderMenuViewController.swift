@@ -20,22 +20,15 @@ public class SliderMenuViewController: UIViewController, GlobalVariables {
     }
 
     public func initPanel(mainViewController: UIViewController, leftMenuViewController: UIViewController) {
-        self.menuViewControllers.mainViewController = mainViewController
-        self.menuViewControllers.leftViewController = leftMenuViewController
-        self.initView()
+        self.initViewController(mainViewController, leftMenuViewController: leftMenuViewController, rightMenuViewController: nil)
     }
     
     public func initPanel(mainViewController: UIViewController, rightMenuViewController: UIViewController) {
-        self.menuViewControllers.mainViewController = mainViewController
-        self.menuViewControllers.rightViewController = rightMenuViewController
-        self.initView()
+        self.initViewController(mainViewController, leftMenuViewController: nil, rightMenuViewController: rightMenuViewController)
     }
     
     public func initPanel(mainViewController: UIViewController, leftMenuViewController: UIViewController, rightMenuViewController: UIViewController) {
-        self.menuViewControllers.mainViewController = mainViewController
-        self.menuViewControllers.leftViewController = leftMenuViewController
-        self.menuViewControllers.rightViewController = rightMenuViewController
-        self.initView()
+        self.initViewController(mainViewController, leftMenuViewController: leftMenuViewController, rightMenuViewController: rightMenuViewController)
     }
 
     public override func viewDidLoad() {
@@ -43,15 +36,15 @@ public class SliderMenuViewController: UIViewController, GlobalVariables {
         edgesForExtendedLayout = UIRectEdge.None
     }
     
-    public override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
+    public override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
         self.gesture.addLeftPanGestures()
         self.gesture.addRightPanGestures()
     }
     
-    public override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
+    public override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
         
         self.gesture.removeLeftPanGestures()
         self.gesture.removeLeftTapGestures()
@@ -82,14 +75,6 @@ public class SliderMenuViewController: UIViewController, GlobalVariables {
         if close {
             self.closeSlideMenuLeft()
             self.closeSlideMenuRight()
-        }
-    }
-    
-    private func removeViewController(viewController: UIViewController?) {
-        if let _viewController = viewController {
-            _viewController.willMoveToParentViewController(nil)
-            _viewController.view.removeFromSuperview()
-            _viewController.removeFromParentViewController()
         }
     }
     
@@ -144,15 +129,24 @@ public class SliderMenuViewController: UIViewController, GlobalVariables {
     //
     // MARK: TO be override
     //
-    
-    public func track(trackAction: TrackAction) {
-        // function is for tracking
-        // Please to override it if necessary
-    }
+//    
+//    public func track(trackAction: TrackAction) {
+//        // function is for tracking
+//        // Please to override it if necessary
+//    }
     
     //
     // MARK: Private
     //
+    
+    private func initViewController(mainViewController: UIViewController, leftMenuViewController: UIViewController?, rightMenuViewController: UIViewController?) {
+        self.resetView()
+        
+        self.menuViewControllers.mainViewController = mainViewController
+        self.menuViewControllers.leftViewController = leftMenuViewController
+        self.menuViewControllers.rightViewController = rightMenuViewController
+        self.initView()
+    }
     
     private func initView() {
         self.menuTools.rootView = self.view
@@ -169,11 +163,26 @@ public class SliderMenuViewController: UIViewController, GlobalVariables {
         self.animationType.resetAnimationRightSide()
     }
     
+    private func resetView() {
+        removeViewController(self.menuViewControllers.mainViewController)
+        removeViewController(self.menuViewControllers.leftViewController)
+        removeViewController(self.menuViewControllers.rightViewController)
+    }
+    
+    private func removeViewController(viewController: UIViewController?) {
+        if let _viewController = viewController {
+            _viewController.willMoveToParentViewController(nil)
+            _viewController.view.removeFromSuperview()
+            _viewController.removeFromParentViewController()
+        }
+    }
+    
     private func setUpViewController(targetView: UIView, targetViewController: UIViewController?) {
         if let viewController = targetViewController {
-            addChildViewController(viewController)
             viewController.view.frame = targetView.bounds
             targetView.addSubview(viewController.view)
+            viewController.willMoveToParentViewController(self)
+            self.addChildViewController(viewController)
             viewController.didMoveToParentViewController(self)
         }
     }

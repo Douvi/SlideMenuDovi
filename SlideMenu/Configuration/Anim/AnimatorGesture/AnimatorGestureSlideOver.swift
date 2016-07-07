@@ -98,7 +98,7 @@ extension AnimatorGestureSlideOver {
         var newOrigin: CGFloat = toFrame.origin.x
         newOrigin += translation.x
         
-        let minOrigin: CGFloat = -SliderMenuOptions.rightViewWidth
+        let minOrigin: CGFloat = -SliderMenuOptions.leftViewWidth
         let maxOrigin: CGFloat = 0.0
         var newFrame: CGRect = toFrame
         
