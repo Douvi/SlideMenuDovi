@@ -39,7 +39,6 @@ extension AnimatorVectorSlideOver {
         
         UIView.animateWithDuration(duration, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {() -> Void in
             self.menuViews.leftContainerView.frame = frame
-            self.menuViews.opacityView.frame = frame
             self.menuViews.opacityView.layer.opacity = Float(SliderMenuOptions.contentViewOpacity)
         }) {(Bool) -> Void in
             self.menuTools.disableContentInteraction()
@@ -65,7 +64,6 @@ extension AnimatorVectorSlideOver {
         
         UIView.animateWithDuration(duration, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {() -> Void in
             self.menuViews.leftContainerView.frame = frame
-            self.menuViews.opacityView.frame = frame
             self.menuViews.opacityView.layer.opacity = 0.0
         }) {(Bool) -> Void in
             self.animationType.removeShadow(self.menuViews.leftContainerView)
@@ -93,7 +91,6 @@ extension AnimatorVectorSlideOver {
         
         UIView.animateWithDuration(duration, delay: 0.0, options: .CurveEaseInOut, animations: {() -> Void in
             self.menuViews.rightContainerView.frame = frame
-            self.menuViews.opacityView.frame = frame
             self.menuViews.opacityView.layer.opacity = Float(SliderMenuOptions.contentViewOpacity)
         }) {(Bool) -> Void in
             self.menuTools.disableContentInteraction()
@@ -117,7 +114,6 @@ extension AnimatorVectorSlideOver {
         
         UIView.animateWithDuration(duration, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {() -> Void in
             self.menuViews.rightContainerView.frame = frame
-            self.menuViews.opacityView.frame = frame
             self.menuViews.opacityView.layer.opacity = 0.0
         }) {(Bool) -> Void in
             self.menuTools.removeShadow(self.menuViews.rightContainerView)

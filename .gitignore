@@ -9,21 +9,21 @@ DerivedData/
 *.DS_Store
 
 ## Various settings
-*.pbxuser
+**.pbxuser
 !default.pbxuser
-*.mode1v3
+*/*.mode1v3
 !default.mode1v3
-*.mode2v3
+*/*.mode2v3
 !default.mode2v3
-*.perspectivev3
+*/*.perspectivev3
 !default.perspectivev3
-*.xcworkspace/xcuserdata/
-*.xcodeproj/xcuserdata/
+*/*.xcworkspace/xcuserdata/
+**/.xcodeproj/xcuserdata/
 
 ## Other
-*.moved-aside
-*.xccheckout
-*.xcscmblueprint
+*/*.moved-aside
+*/*.xccheckout
+*/*.xcscmblueprint
 
 ## AppCode
 .idea/

@@ -20,6 +20,7 @@ extension AnimatorFireSlideOver {
     public func animateLeftSideToOpen() {
         self.menuViews.rightContainerView.frame.origin.x = self.rootView.bounds.width
         self.menuViews.mainContainerView.frame.origin.x = 0
+        self.menuViews.opacityView.frame.origin.x = 0
         self.animationType.openLeftWithVelocity(0.0)
     }
     
@@ -32,6 +33,7 @@ extension AnimatorFireSlideOver {
         
         self.menuViews.leftContainerView.frame.origin.x = -SliderMenuOptions.leftViewWidth
         self.menuViews.mainContainerView.frame.origin.x = 0
+        self.menuViews.opacityView.frame.origin.x = 0
         self.animationType.openRightWithVelocity(x)
     }
     

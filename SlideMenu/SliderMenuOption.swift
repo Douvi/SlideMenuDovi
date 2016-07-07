@@ -23,35 +23,35 @@ public enum TrackAction {
 }
 
 public struct SliderMenuOptions {
-// you will define the left side
-public static var leftViewWidth: CGFloat = 242.0
-public static var leftBezelWidth: CGFloat = 16.0
-public static var leftPanFromBezel: Bool = true
+    // you will define the left side
+    public static var leftViewWidth: CGFloat = 242.0
+    public static var leftBezelWidth: CGFloat = 16.0
+    public static var leftPanFromBezel: Bool = true
 
-// you will define the right side
-public static var rightViewWidth: CGFloat = 242.0
-public static var rightBezelWidth: CGFloat = 16.0
-public static var rightPanFromBezel: Bool = true
+    // you will define the right side
+    public static var rightViewWidth: CGFloat = 242.0
+    public static var rightBezelWidth: CGFloat = 16.0
+    public static var rightPanFromBezel: Bool = true
 
-// the type of animation
-public static var animationType: SliderMenuAnimation = SliderMenuAnimationDefault()
+    // the type of animation
+    public static var animationType: SliderMenuAnimation = SliderMenuAnimationDefault()
 
-// The menu will not open or close under X pixel
-public static var pointOfNoReturnWidth: CGFloat = 44.0
+    // The menu will not open or close under X pixel
+    public static var pointOfNoReturnWidth: CGFloat = 44.0
 
-// opacity between the MainViewController and the Menu (Left or Right)
-public static var contentViewOpacity: CGFloat = 0.0
+    // opacity between the MainViewController and the Menu (Left or Right)
+    public static var contentViewOpacity: CGFloat = 0.0
 
-// The sliding view will be set with a shadow
-public static var shadowOpacity: CGFloat = 1.0
-public static var shadowRadius: CGFloat = 12
-public static var shadowOffset: CGSize = CGSizeMake(0,0)
-public static var shadowColor: UIColor = UIColor.blackColor()
+    // The sliding view will be set with a shadow
+    public static var shadowOpacity: CGFloat = 0.0
+    public static var shadowRadius: CGFloat = 12
+    public static var shadowOffset: CGSize = CGSizeMake(0,0)
+    public static var shadowColor: UIColor = UIColor.blackColor()
 
-public static var animationDuration: CGFloat = 0.4
+    public static var animationDuration: CGFloat = 0.4
 
-// status bar options
-public static var hideStatusBar: Bool = false
-public static var showsStatusBarBackground: Bool = false
-public static var statusBarBackgroundColor: UIColor = UIColor.clearColor()
+    // status bar options
+    public static var hideStatusBar: Bool = false
+    public static var showsStatusBarBackground: Bool = true
+    public static var statusBarBackgroundColor: UIColor = UIColor.blueColor()
 }
