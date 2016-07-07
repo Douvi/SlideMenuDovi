@@ -40,7 +40,7 @@ public struct SliderMenuOptions {
     public static var pointOfNoReturnWidth: CGFloat = 44.0
 
     // opacity between the MainViewController and the Menu (Left or Right)
-    public static var contentViewOpacity: CGFloat = 0.0
+    public static var contentViewOpacity: CGFloat = 0.8
 
     // The sliding view will be set with a shadow
     public static var shadowOpacity: CGFloat = 1.0
