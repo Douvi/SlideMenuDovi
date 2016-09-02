@@ -34,6 +34,7 @@ public class SliderMenuViewController: UIViewController, GlobalVariables {
     public override func viewDidLoad() {
         super.viewDidLoad()
         edgesForExtendedLayout = UIRectEdge.None
+         self.initView()
     }
     
     public override func viewDidAppear(animated: Bool) {
@@ -52,14 +53,14 @@ public class SliderMenuViewController: UIViewController, GlobalVariables {
         self.gesture.removeRightTapGestures()
     }
 
-    public override func viewWillLayoutSubviews() {
+//    public override func viewWillLayoutSubviews() {
 //        super.viewWillLayoutSubviews()
-        
-        self.setUpViewController(self.menuViews.mainContainerView, targetViewController: self.menuViewControllers.mainViewController)
-        self.setUpViewController(self.menuViews.leftContainerView, targetViewController: self.menuViewControllers.leftViewController)
-        self.setUpViewController(self.menuViews.rightContainerView, targetViewController: self.menuViewControllers.rightViewController)
-    }
-    
+//        
+//        self.setUpViewController(self.menuViews.mainContainerView, targetViewController: self.menuViewControllers.mainViewController)
+//        self.setUpViewController(self.menuViews.leftContainerView, targetViewController: self.menuViewControllers.leftViewController)
+//        self.setUpViewController(self.menuViews.rightContainerView, targetViewController: self.menuViewControllers.rightViewController)
+//    }
+//    
     public override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
         
@@ -72,6 +73,26 @@ public class SliderMenuViewController: UIViewController, GlobalVariables {
         self.removeViewController(self.menuViewControllers.mainViewController)
         self.menuViewControllers.mainViewController = mainViewController
         self.setUpViewController(self.menuViews.mainContainerView, targetViewController: mainViewController)
+        if close {
+            self.closeSlideMenuLeft()
+            self.closeSlideMenuRight()
+        }
+    }
+    
+    public func changeLeftViewController(leftViewController: UIViewController, close: Bool) {
+        self.removeViewController(self.menuViewControllers.leftViewController)
+        self.menuViewControllers.leftViewController = leftViewController
+        self.setUpViewController(self.menuViews.leftContainerView, targetViewController: leftViewController)
+        if close {
+            self.closeSlideMenuLeft()
+            self.closeSlideMenuRight()
+        }
+    }
+    
+    public func changeRightViewController(rightViewController: UIViewController, close: Bool) {
+        self.removeViewController(self.menuViewControllers.rightViewController)
+        self.menuViewControllers.rightViewController = rightViewController
+        self.setUpViewController(self.menuViews.rightContainerView, targetViewController: rightViewController)
         if close {
             self.closeSlideMenuLeft()
             self.closeSlideMenuRight()
@@ -145,7 +166,10 @@ public class SliderMenuViewController: UIViewController, GlobalVariables {
         self.menuViewControllers.mainViewController = mainViewController
         self.menuViewControllers.leftViewController = leftMenuViewController
         self.menuViewControllers.rightViewController = rightMenuViewController
-        self.initView()
+        
+        self.setUpViewController(self.menuViews.mainContainerView, targetViewController: self.menuViewControllers.mainViewController)
+        self.setUpViewController(self.menuViews.leftContainerView, targetViewController: self.menuViewControllers.leftViewController)
+        self.setUpViewController(self.menuViews.rightContainerView, targetViewController: self.menuViewControllers.rightViewController)
     }
     
     private func initView() {

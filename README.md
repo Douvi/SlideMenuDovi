@@ -77,14 +77,14 @@ Done your project is setup with a SlideMenu!!!
 
 1. Classic animation, main view will slide
 ```
-SliderMenuOption.animationType = SliderMenuAnimationDefault()
+SliderMenuOptions.animationType = SliderMenuAnimationDefault()
 ```
 
 ![alt text]( https://github.com/Douvi/SlideMenuDovi/blob/develop/anim_default.gif "default")
 
 2. Android animation, left or right side will slider over center view
 ```
-SliderMenuOption.animationType = SliderMenuAnimationSliderOver()
+SliderMenuOptions.animationType = SliderMenuAnimationSliderOver()
 ```
 
 ![alt text]( https://github.com/Douvi/SlideMenuDovi/blob/develop/anim_slide_over.gif "slide over")
@@ -123,7 +123,7 @@ public class SliderMenuAnimationX: NSObject, SliderMenuAnimation {
 
 If you want to override any protocol there is 2 ways:
 
-### 1 way - I do not have time
+### 1 - I do not have time
 
 create a new file into 'AnimationType/SliderMenuAnimationX.swift'. Extend one of the **SliderMenuAnination** (can be **SliderMenuAnimationDefault** or **SliderMenuAnimationSliderOver**) and override all the methods you need.
 
@@ -156,7 +156,7 @@ public class SliderMenuAnimationX: NSObject, SliderMenuAnimation {
 }
 ```
 
-### 2 way - I do have time
+### 2 - I do have time
 
 create a new file into 'AnimatorChecker/AnimatorCheckerX.swift' which will implement **AnimatorChecker** or **AnimatorCheckerSliderOver**. You can do the same with all others protocols (**AnimatorFire**, **AnimatorGesture**, **AnimatorVector**, **GlobalVariables**)
 
