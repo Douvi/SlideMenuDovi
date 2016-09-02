@@ -77,14 +77,14 @@ Done your project is setup with a SlideMenu!!!
 
 1. Classic animation, main view will slide
 ```
-SliderMenuOption.animationType = SliderMenuAnimationDefault()
+SliderMenuOptions.animationType = SliderMenuAnimationDefault()
 ```
 
 ![alt text]( https://github.com/Douvi/SlideMenuDovi/blob/develop/anim_default.gif "default")
 
 2. Android animation, left or right side will slider over center view
 ```
-SliderMenuOption.animationType = SliderMenuAnimationSliderOver()
+SliderMenuOptions.animationType = SliderMenuAnimationSliderOver()
 ```
 
 ![alt text]( https://github.com/Douvi/SlideMenuDovi/blob/develop/anim_slide_over.gif "slide over")
