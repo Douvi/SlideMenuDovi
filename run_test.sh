@@ -3,13 +3,14 @@
 project="SlideMenuDovi"
 workspace="SlideMenuDovi.xcworkspace"
 destination="platform=iOS Simulator,name=iPhone 6S,OS=9.3"
+configuration="Debug"
 
 eval "cd Example"
 eval "gem install bundler"
 eval "bundle install"
 eval "pod install"
 
-TEST_CMD="xcodebuild -scheme ${project} -workspace ${workspace} -sdk iphonesimulator -destination '${destination}' build test"
+TEST_CMD="xcodebuild -configuration ${configuration} -scheme ${project} -workspace ${workspace} -sdk iphonesimulator -destination '${destination}' build test"
 
 which -s xcpretty
 XCPRETTY_INSTALLED=$?

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		634278F7A301A72677E11F2F /* Pods_SlideMenuDoviTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF42B5A2E43B725D9DC0C2E1 /* Pods_SlideMenuDoviTests.framework */; };
-		D808CBC51D038334008F2077 /* SliderMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808CBC31D038334008F2077 /* SliderMenuOption.swift */; };
 		D808CBC61D038334008F2077 /* SliderMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808CBC41D038334008F2077 /* SliderMenuViewController.swift */; };
 		D808CBCB1D038353008F2077 /* SliderMenuAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808CBC81D038353008F2077 /* SliderMenuAnimation.swift */; };
 		D808CBCC1D038353008F2077 /* SliderMenuAnimationDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808CBC91D038353008F2077 /* SliderMenuAnimationDefault.swift */; };
@@ -21,6 +20,7 @@
 		D81ED25D1D01E87D00AC7795 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED25C1D01E87D00AC7795 /* LeftViewController.swift */; };
 		D81ED25F1D01E8AE00AC7795 /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED25E1D01E8AE00AC7795 /* RightViewController.swift */; };
 		D81ED2611D01E90A00AC7795 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED2601D01E90A00AC7795 /* RootViewController.swift */; };
+		D85E0AFB1D7994F300E839F8 /* SliderMenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85E0AFA1D7994F300E839F8 /* SliderMenuOptions.swift */; };
 		D8E71A171D0223880082248C /* ListAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E71A161D0223880082248C /* ListAnimationViewController.swift */; };
 		D8E71A211D031DE30082248C /* KIFUITestActor+identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E71A1F1D031DE30082248C /* KIFUITestActor+identifier.swift */; };
 		D8E71A221D031DE30082248C /* QuickSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E71A201D031DE30082248C /* QuickSpec.swift */; };
@@ -55,7 +55,6 @@
 /* Begin PBXFileReference section */
 		AF42B5A2E43B725D9DC0C2E1 /* Pods_SlideMenuDoviTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideMenuDoviTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D765790063CC4B1C30AE32C9 /* Pods-SlideMenuDoviTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideMenuDoviTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideMenuDoviTests/Pods-SlideMenuDoviTests.release.xcconfig"; sourceTree = "<group>"; };
-		D808CBC31D038334008F2077 /* SliderMenuOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuOption.swift; path = ../SlideMenu/SliderMenuOption.swift; sourceTree = "<group>"; };
 		D808CBC41D038334008F2077 /* SliderMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuViewController.swift; path = ../SlideMenu/SliderMenuViewController.swift; sourceTree = "<group>"; };
 		D808CBC81D038353008F2077 /* SliderMenuAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuAnimation.swift; path = ../SlideMenu/AnimationType/SliderMenuAnimation.swift; sourceTree = "<group>"; };
 		D808CBC91D038353008F2077 /* SliderMenuAnimationDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuAnimationDefault.swift; path = ../SlideMenu/AnimationType/SliderMenuAnimationDefault.swift; sourceTree = "<group>"; };
@@ -72,6 +71,7 @@
 		D81ED25C1D01E87D00AC7795 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		D81ED25E1D01E8AE00AC7795 /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 		D81ED2601D01E90A00AC7795 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		D85E0AFA1D7994F300E839F8 /* SliderMenuOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuOptions.swift; path = ../SlideMenu/SliderMenuOptions.swift; sourceTree = "<group>"; };
 		D8E71A161D0223880082248C /* ListAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListAnimationViewController.swift; sourceTree = "<group>"; };
 		D8E71A181D031D200082248C /* SlideMenuDovi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideMenuDovi-Bridging-Header.h"; sourceTree = "<group>"; };
 		D8E71A1B1D031D440082248C /* SlideMenuDoviTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlideMenuDoviTests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 				D8E9AF011D03845300FDDD16 /* Extension */,
 				D8E9AEE31D03838D00FDDD16 /* Configuration */,
 				D808CBC71D038340008F2077 /* AnimationType */,
-				D808CBC31D038334008F2077 /* SliderMenuOption.swift */,
+				D85E0AFA1D7994F300E839F8 /* SliderMenuOptions.swift */,
 				D808CBC41D038334008F2077 /* SliderMenuViewController.swift */,
 			);
 			name = SlideMenu;
@@ -458,11 +458,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85E0AFB1D7994F300E839F8 /* SliderMenuOptions.swift in Sources */,
 				D808CBCD1D038353008F2077 /* SliderMenuAnimationSilderOver.swift in Sources */,
 				D808CBC61D038334008F2077 /* SliderMenuViewController.swift in Sources */,
 				D8E9AF031D03845C00FDDD16 /* UIViewController+SilderMenu.swift in Sources */,
 				D8E9AEEE1D0383E300FDDD16 /* AnimatorCheckerSliderOver.swift in Sources */,
-				D808CBC51D038334008F2077 /* SliderMenuOption.swift in Sources */,
 				D81ED25D1D01E87D00AC7795 /* LeftViewController.swift in Sources */,
 				D81ED1FB1D01E65100AC7795 /* MainViewController.swift in Sources */,
 				D8E9AF091D03846E00FDDD16 /* MenuViewControllers.swift in Sources */,
