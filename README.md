@@ -14,7 +14,7 @@ If you want to create a specific Animation, aside the current animations, **Slid
 
 First you need to look at **SliderMenuOptions**, this structure will give you a full list of options (width, opacity, shadow, status bar, etc)
 
-```
+```swift
 public struct SliderMenuOptions {
     // Define the left side
     public static var leftViewWidth: CGFloat = 242.0
