@@ -9,7 +9,11 @@
 import Foundation
 import UIKit
 
-public class SliderMenuViewController: UIViewController, GlobalVariables {
+public protocol SlidingMenuOptionsProtocol : class {
+    func setupSlidingMenuOptions()
+}
+
+public class SliderMenuViewController: UIViewController, GlobalVariables, SlidingMenuOptionsProtocol {
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -174,6 +178,7 @@ public class SliderMenuViewController: UIViewController, GlobalVariables {
     
     private func initView() {
         self.menuTools.rootView = self.view
+        self.setupSlidingMenuOptions()
         
         self.menuViews.initMainContainerView(view.bounds)
         self.menuViews.initOpacityView(view.bounds)
@@ -191,6 +196,10 @@ public class SliderMenuViewController: UIViewController, GlobalVariables {
         removeViewController(self.menuViewControllers.mainViewController)
         removeViewController(self.menuViewControllers.leftViewController)
         removeViewController(self.menuViewControllers.rightViewController)
+    }
+    
+    public func setupSlidingMenuOptions() {
+        //stub, implementation is subclasses
     }
     
     private func removeViewController(viewController: UIViewController?) {
