@@ -53,7 +53,7 @@ public struct SliderMenuOptions {
 
 Then you need to override **SliderMenuViewController** like this:
 
-```
+```swift
 import SlideMenuDovi
 
 class YourRootViewController: SliderMenuViewController {
@@ -67,6 +67,12 @@ class YourRootViewController: SliderMenuViewController {
 
       self.initPanel(main, leftMenuViewController: left, rightMenuViewController: right)
   }
+  
+  override func setupSlidingMenuOptions() {
+        //Setup any SlideMenuOptions that you want to change inside this method
+        SliderMenuOptions.animationDuration = 0.2
+        SliderMenuOptions.statusBarBackgroundColor = UIColor.redColor()
+    }
 }
 
 ```
@@ -76,14 +82,14 @@ Done your project is setup with a SlideMenu!!!
 ## Animations available
 
 1. Classic animation, main view will slide
-```
+```swift
 SliderMenuOptions.animationType = SliderMenuAnimationDefault()
 ```
 
 ![alt text]( https://github.com/Douvi/SlideMenuDovi/blob/develop/anim_default.gif "default")
 
 2. Android animation, left or right side will slider over center view
-```
+```swift
 SliderMenuOptions.animationType = SliderMenuAnimationSliderOver()
 ```
 
@@ -96,7 +102,7 @@ To create your own Animation you just need to implement **SliderMenuAnimation** 
 
 **SliderMenuAnimationX**
 
-```
+```swift
 public class SliderMenuAnimationX: NSObject, SliderMenuAnimation {
     public var silderMenuGesture: SliderMenuGesture {
         get {
@@ -127,7 +133,7 @@ If you want to override any protocol there is 2 ways:
 
 create a new file into 'AnimationType/SliderMenuAnimationX.swift'. Extend one of the **SliderMenuAnination** (can be **SliderMenuAnimationDefault** or **SliderMenuAnimationSliderOver**) and override all the methods you need.
 
-```
+```swift
 public class SliderMenuAnimationX: NSObject, SliderMenuAnimation {
     public var silderMenuGesture: SliderMenuGesture {
         get {
@@ -160,7 +166,7 @@ public class SliderMenuAnimationX: NSObject, SliderMenuAnimation {
 
 create a new file into 'AnimatorChecker/AnimatorCheckerX.swift' which will implement **AnimatorChecker** or **AnimatorCheckerSliderOver**. You can do the same with all others protocols (**AnimatorFire**, **AnimatorGesture**, **AnimatorVector**, **GlobalVariables**)
 
-```
+```swift
 public protocol AnimatorCheckerX: AnimatorChecker {}
 
 extension AnimatorCheckerX {
@@ -174,7 +180,7 @@ extension AnimatorCheckerX {
 
 create a new file into 'AnimationType/SliderMenuAnimationX.swift'. Extend one of the **SliderMenuAnination** (can be **SliderMenuAnimationDefault** or **SliderMenuAnimationSliderOver**) and extend too the new protocol you just create **AnimatorCheckerX**
 
-```
+```swift
 public class SliderMenuAnimationX: NSObject, SliderMenuAnimation, AnimatorCheckerX {
     public var silderMenuGesture: SliderMenuGesture {
         get {
@@ -204,7 +210,7 @@ Done you just create your own Animation :)
 
 **AnimatorChecker**
 
-```
+```swift
 /**
  *  Check if menu is open or close
  */
@@ -218,7 +224,7 @@ public protocol AnimatorChecker: GlobalVariables {
 
 **AnimatorFire**
 
-```
+```swift
 /**
  *  It will fire the animation
  */
@@ -244,7 +250,7 @@ public protocol AnimatorFire: GlobalVariables {
 
 **AnimatorGesture**
 
-```
+```swift
 /**
  *  It will be call when the Pan gesture (left or right) is activated
  */
@@ -264,7 +270,7 @@ public protocol AnimatorGesture: GlobalVariables {
 
 **AnimatorVector**
 
-```
+```swift
 /**
  *  It will be call to close or open menu
  */
@@ -283,7 +289,7 @@ public protocol AnimatorVector: GlobalVariables {
 
 All those Protocols implement **GlobalVariables** which will help you to get access to all information you need.
 
-```
+```swift
 /**
  *  Give you access to all you need
  */
