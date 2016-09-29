@@ -36,7 +36,6 @@ extension AnimatorFire {
     public func toggleLeft() {
         if self.animationType.isLeftSideOpen() {
             self.closeLeft()
-//            self.track(.TapClose)
         } else {
             self.openLeft()
         }
@@ -57,7 +56,6 @@ extension AnimatorFire {
         self.animateLeftSideToClose()
 
         self.menuTools.setCloseWindowLevel()
-//        self.track(.TapClose)
     }
 
     public func closeRight() {
@@ -67,7 +65,6 @@ extension AnimatorFire {
         self.animateRightSideToClose()
 
         self.menuTools.setCloseWindowLevel()
-//        self.track(.TapClose)
     }
 
     public func openLeft() {
@@ -77,7 +74,6 @@ extension AnimatorFire {
         self.menuViewControllers.leftViewController?.beginAppearanceTransition(isLeftClose, animated: true)
 
         self.animateLeftSideToOpen()
-//        self.track(.TapOpen)
     }
 
     public func openRight() {
@@ -87,7 +83,6 @@ extension AnimatorFire {
         self.menuViewControllers.rightViewController?.beginAppearanceTransition(isRightClose, animated: true)
 
         self.animateRightSideToOpen()
-//        self.track(.TapOpen)
     }
 
     //

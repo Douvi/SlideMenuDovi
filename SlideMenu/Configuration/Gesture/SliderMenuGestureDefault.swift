@@ -103,6 +103,13 @@ public class SliderMenuGestureDefault: NSObject, SliderMenuGesture {
 
             self.menuViewControllers.leftViewController?.beginAppearanceTransition(LeftPanState.wasHiddenAtStartOfPan, animated: true)
             self.menuTools.setOpenWindowLevel()
+            
+            if LeftPanState.wasOpenAtStartOfPan {
+                self.sendNotification(TrackAction.LeftWillClose)
+            } else {
+                self.sendNotification(TrackAction.LeftWillOpen)
+            }
+            
         case UIGestureRecognizerState.Changed:
             
             let translation: CGPoint = panGesture.translationInView(panGesture.view!)
@@ -117,12 +124,10 @@ public class SliderMenuGestureDefault: NSObject, SliderMenuGesture {
             if panInfo.action == .Open {
                 self.menuViewControllers.leftViewController?.endAppearanceTransition()
                 self.animationType.openLeftWithVelocity(panInfo.velocity)
-//                track(.FlickOpen)
             } else {
                 self.menuViewControllers.leftViewController?.endAppearanceTransition()
                 self.animationType.closeLeftWithVelocity(panInfo.velocity)
                 self.menuTools.setCloseWindowLevel()
-//                track(.FlickClose)
             }
         default:
             break
@@ -144,6 +149,13 @@ public class SliderMenuGestureDefault: NSObject, SliderMenuGesture {
             
             self.menuViewControllers.rightViewController?.beginAppearanceTransition(RightPanState.wasHiddenAtStartOfPan, animated: true)
             self.menuTools.setOpenWindowLevel()
+            
+            if RightPanState.wasOpenAtStartOfPan {
+                self.sendNotification(TrackAction.RightWillClose)
+            } else {
+                self.sendNotification(TrackAction.RightWillOpen)
+            }
+            
         case UIGestureRecognizerState.Changed:
             
             let translation: CGPoint = panGesture.translationInView(panGesture.view!)
@@ -173,10 +185,12 @@ public class SliderMenuGestureDefault: NSObject, SliderMenuGesture {
     }
     
     public func handleLeftTapGesture() {
+        self.sendNotification(TrackAction.LeftWillClose)
         self.animationType.toggleLeft()
     }
     
     public func handleRightTapGesture() {
+        self.sendNotification(TrackAction.RightWillClose)
         self.animationType.toggleRight()
     }
     

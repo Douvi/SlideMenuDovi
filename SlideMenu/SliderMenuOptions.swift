@@ -15,11 +15,15 @@ public enum SlideAction {
     case Close
 }
 
-public enum TrackAction {
-    case TapOpen
-    case TapClose
-    case FlickOpen
-    case FlickClose
+public enum TrackActionNotification: String {
+    case MenuLeftWillOpen = "SliderMenuTrackActionNotificationMenuLeftWillOpen"
+    case MenuLeftDidOpen = "SliderMenuTrackActionNotificationMenuLeftDidOpen"
+    case MenuLeftWillClose = "SliderMenuTrackActionNotificationMeniLeftWillClose"
+    case MenuLeftDidClose = "SliderMenuTrackActionNotificationMeniLeftDidClose"
+    case MenuRightWillOpen = "SliderMenuTrackActionNotificationMenuMenuRightWillOpen"
+    case MenuRightDidOpen = "SliderMenuTrackActionNotificationMenuMenuRightDidOpen"
+    case MenuRightWillClose = "SliderMenuTrackActionNotificationMenuMenuRightWillClose"
+    case MenuRightDidClose = "SliderMenuTrackActionNotificationMenuMenuRightDidClose"
 }
 
 public struct SliderMenuOptions {

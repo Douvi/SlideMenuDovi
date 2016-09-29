@@ -9,6 +9,17 @@
 import Foundation
 import UIKit
 
+public enum TrackAction {
+    case LeftWillOpen
+    case LeftWillClose
+    case RightWillOpen
+    case RightWillClose
+    case LeftDidOpen
+    case LeftDidClose
+    case RightDidOpen
+    case RightDidClose
+}
+
 /**
  *  Give you access to all you need
  */
@@ -77,5 +88,36 @@ extension GlobalVariables {
         get {
             return menuViewControllers.mainViewController
         }
+    }
+    
+    public func sendNotification(trackAction: TrackAction) {
+        print("TrackAction - \(trackAction)")
+        switch trackAction {
+        case .LeftWillOpen:
+            NSNotificationCenter.defaultCenter().postNotificationName(TrackActionNotification.MenuLeftWillOpen.rawValue, object: nil)
+            break
+        case .LeftDidOpen:
+            NSNotificationCenter.defaultCenter().postNotificationName(TrackActionNotification.MenuLeftDidOpen.rawValue, object: nil)
+            break
+        case .LeftWillClose:
+            NSNotificationCenter.defaultCenter().postNotificationName(TrackActionNotification.MenuLeftWillClose.rawValue, object: nil)
+            break
+        case .LeftDidClose:
+            NSNotificationCenter.defaultCenter().postNotificationName(TrackActionNotification.MenuLeftDidClose.rawValue, object: nil)
+            break
+        case .RightWillOpen:
+            NSNotificationCenter.defaultCenter().postNotificationName(TrackActionNotification.MenuRightWillOpen.rawValue, object: nil)
+            break
+        case .RightDidOpen:
+            NSNotificationCenter.defaultCenter().postNotificationName(TrackActionNotification.MenuRightDidOpen.rawValue, object: nil)
+            break
+        case .RightWillClose:
+            NSNotificationCenter.defaultCenter().postNotificationName(TrackActionNotification.MenuRightWillClose.rawValue, object: nil)
+            break
+        case .RightDidClose:
+            NSNotificationCenter.defaultCenter().postNotificationName(TrackActionNotification.MenuRightDidClose.rawValue, object: nil)
+            break
+        }
+        
     }
 }

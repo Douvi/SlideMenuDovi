@@ -56,15 +56,7 @@ public class SliderMenuViewController: UIViewController, GlobalVariables, Slidin
         self.gesture.removeRightPanGestures()
         self.gesture.removeRightTapGestures()
     }
-
-//    public override func viewWillLayoutSubviews() {
-//        super.viewWillLayoutSubviews()
-//        
-//        self.setUpViewController(self.menuViews.mainContainerView, targetViewController: self.menuViewControllers.mainViewController)
-//        self.setUpViewController(self.menuViews.leftContainerView, targetViewController: self.menuViewControllers.leftViewController)
-//        self.setUpViewController(self.menuViews.rightContainerView, targetViewController: self.menuViewControllers.rightViewController)
-//    }
-//    
+   
     public override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
         
@@ -108,10 +100,20 @@ public class SliderMenuViewController: UIViewController, GlobalVariables, Slidin
     //
     
     public override func toggleSlideMenuLeft() {
+        if self.animationType.isLeftSideOpen() {
+            self.sendNotification(TrackAction.LeftWillClose)
+        } else {
+            self.sendNotification(TrackAction.LeftWillOpen)
+        }
         self.animationType.toggleLeft()
     }
     
     public override func toggleSlideMenuRight() {
+        if self.animationType.isRightSideOpen() {
+            self.sendNotification(TrackAction.RightWillClose)
+        } else {
+            self.sendNotification(TrackAction.RightWillOpen)
+        }
         self.animationType.toggleRight()
     }
     
@@ -120,10 +122,12 @@ public class SliderMenuViewController: UIViewController, GlobalVariables, Slidin
     //
     
     public override func openSlideMenuLeft() {
-       self.animationType.openLeft()
+        self.sendNotification(TrackAction.LeftWillOpen)
+        self.animationType.openLeft()
     }
     
     public override func openSlideMenuRight() {
+        self.sendNotification(TrackAction.RightWillOpen)
         self.animationType.openRight()
     }
     
@@ -132,10 +136,12 @@ public class SliderMenuViewController: UIViewController, GlobalVariables, Slidin
     //
     
     public override func closeSlideMenuLeft() {
+        self.sendNotification(TrackAction.LeftWillClose)
         self.animationType.closeLeft()
     }
     
     public override func closeSlideMenuRight() {
+        self.sendNotification(TrackAction.RightWillClose)
         self.animationType.closeRight()
     }
     
@@ -150,15 +156,6 @@ public class SliderMenuViewController: UIViewController, GlobalVariables, Slidin
     public override func isSlideMenuRightOpen() -> Bool {
         return self.animationType.isRightSideOpen()
     }
-    
-    //
-    // MARK: TO be override
-    //
-//    
-//    public func track(trackAction: TrackAction) {
-//        // function is for tracking
-//        // Please to override it if necessary
-//    }
     
     //
     // MARK: Private
