@@ -188,6 +188,10 @@ public class SliderMenuGestureDefault: NSObject, SliderMenuGesture {
         
         let point: CGPoint = touch.locationInView(self.rootView)
         
+        if self.mainViewController?.childViewControllers.count > 1 && SliderMenuOptions.openMenuOnlyFirstViewController {
+            return false
+        }
+        
         if gestureRecognizer == leftPanGesture {
             return slideLeftForGestureRecognizer(gestureRecognizer, point: point)
         } else if gestureRecognizer == rightPanGesture {

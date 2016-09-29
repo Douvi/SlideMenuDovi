@@ -49,6 +49,9 @@ public struct SliderMenuOptions {
     public static var shadowColor: UIColor = UIColor.blackColor()
 
     public static var animationDuration: CGFloat = 0.4
+    
+    // Alow or not to open menu after more then 1 ViewController into UINavigationController's stack list of VCs
+    public static var openMenuOnlyFirstViewController: Bool = true
 
     // status bar options
     public static var hideStatusBar: Bool = false
