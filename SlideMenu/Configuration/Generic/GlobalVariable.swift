@@ -89,9 +89,8 @@ extension GlobalVariables {
             return menuViewControllers.mainViewController
         }
     }
-    
+
     public func sendNotification(trackAction: TrackAction) {
-        print("TrackAction - \(trackAction)")
         switch trackAction {
         case .LeftWillOpen:
             NSNotificationCenter.defaultCenter().postNotificationName(TrackActionNotification.MenuLeftWillOpen.rawValue, object: nil)
@@ -118,6 +117,5 @@ extension GlobalVariables {
             NSNotificationCenter.defaultCenter().postNotificationName(TrackActionNotification.MenuRightDidClose.rawValue, object: nil)
             break
         }
-        
     }
 }

@@ -8,7 +8,9 @@
 
 ## Swift version
 
-Compatible with **2.2** and **2.3** (**3.0** is coming soon)
+  - Compatible with **3.0** coming soon
+  - Compatible with **2.3** version 1.1.0
+  - Compatible with **2.2** version 1.0.1
 
 ## Why an other Slide Menu!!!
 
