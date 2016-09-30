@@ -2,7 +2,7 @@
 
 project="SlideMenuDovi"
 workspace="SlideMenuDovi.xcworkspace"
-destination="platform=iOS Simulator,name=iPhone 6S,OS=9.3"
+destination="platform=iOS Simulator,name=iPhone 6S,OS=10"
 configuration="Debug"
 
 eval "cd Example"
