@@ -5,7 +5,7 @@ platform :ios, '8.0'
 def libs_test
     pod 'Quick', '~> 0.9.3'
     pod 'Nimble', '~> 4.1'
-    pod 'KIF', '~> 3.5.1'
+    pod 'KIF', '3.5.1'
 end
 
 def swiftVersion
