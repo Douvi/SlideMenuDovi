@@ -6,7 +6,7 @@ before_install:
   - gem install bundler
 
 script:
-  - ./run_test.sh
+  - bundle exec pod repo update
   - bundle exec pod install --project-directory=Example
   - xcodebuild -configuration Debug -workspace Example/SlideMenuDovi.xcworkspace -scheme SlideMenuDovi -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=10.0' build test | xcpretty
 
