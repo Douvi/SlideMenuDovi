@@ -6,7 +6,7 @@ PODS:
   - Quick (0.9.3)
 
 DEPENDENCIES:
-  - KIF (~> 3.5)
+  - KIF (~> 3.5.1)
   - Nimble (~> 4.1)
   - Quick (~> 0.9.3)
 
@@ -15,6 +15,6 @@ SPEC CHECKSUMS:
   Nimble: 97a0a4cae5124c117115634b2d055d8c97d0af19
   Quick: 13a2a2b19a5d8e3ed4fd0c36ee46597fd77ebf71
 
-PODFILE CHECKSUM: 7204d19a7cc848f30f9fac7b1aae794038a43102
+PODFILE CHECKSUM: 4a45183c5874581576094a7ad3c5e0cb7dec8402
 
 COCOAPODS: 1.0.1
