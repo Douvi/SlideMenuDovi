@@ -2,5 +2,5 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem 'slather', '2.2.0'
-gem 'cocoapods', '0.39.0'
+gem 'slather', '2.3.0'
+gem 'cocoapods', '1.0.1'

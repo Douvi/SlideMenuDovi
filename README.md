@@ -6,6 +6,12 @@
 [![Platform](https://img.shields.io/cocoapods/p/SlideMenuDovi.svg?style=flat)](http://cocoapods.org/pods/SlideMenuDovi)
 [![codecov](https://img.shields.io/codecov/c/github/Douvi/SlideMenuDovi.svg?maxAge=2592000)](https://codecov.io/gh/Douvi/SlideMenuDovi)
 
+## Swift version
+
+  - Compatible with **3.0** coming soon
+  - Compatible with **2.3** version 1.1.0
+  - Compatible with **2.2** version 1.0.1
+
 ## Why an other Slide Menu!!!
 
 If you want to create a specific Animation, aside the current animations, **SlideMenuDovi** is made for you :).
@@ -43,6 +49,9 @@ public struct SliderMenuOptions {
 
     // Animation duration
     public static var animationDuration: CGFloat = 0.4
+
+    // Alow or not to open menu after more then 1 ViewController into UINavigationController's stack list of VCs
+    public static var openMenuOnlyFirstViewController: Bool = true
 
     // Status bar options
     public static var hideStatusBar: Bool = false

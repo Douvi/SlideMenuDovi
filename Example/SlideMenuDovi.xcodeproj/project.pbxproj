@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		634278F7A301A72677E11F2F /* Pods_SlideMenuDoviTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF42B5A2E43B725D9DC0C2E1 /* Pods_SlideMenuDoviTests.framework */; };
+		69B60DF10A5F99398031E1D6 /* Pods_SlideMenuDovi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3059929469AFF30C78771169 /* Pods_SlideMenuDovi.framework */; };
+		9BBE8E6ED7E3B46CB6D6AFE9 /* Pods_SlideMenuDoviTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659684B1CF27DECC605ABFB3 /* Pods_SlideMenuDoviTests.framework */; };
 		D808CBC61D038334008F2077 /* SliderMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808CBC41D038334008F2077 /* SliderMenuViewController.swift */; };
 		D808CBCB1D038353008F2077 /* SliderMenuAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808CBC81D038353008F2077 /* SliderMenuAnimation.swift */; };
 		D808CBCC1D038353008F2077 /* SliderMenuAnimationDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = D808CBC91D038353008F2077 /* SliderMenuAnimationDefault.swift */; };
@@ -53,8 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AF42B5A2E43B725D9DC0C2E1 /* Pods_SlideMenuDoviTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideMenuDoviTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D765790063CC4B1C30AE32C9 /* Pods-SlideMenuDoviTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideMenuDoviTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideMenuDoviTests/Pods-SlideMenuDoviTests.release.xcconfig"; sourceTree = "<group>"; };
+		3059929469AFF30C78771169 /* Pods_SlideMenuDovi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideMenuDovi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		659684B1CF27DECC605ABFB3 /* Pods_SlideMenuDoviTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideMenuDoviTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		770A893A0AD2B03D9FD157DC /* Pods-SlideMenuDovi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideMenuDovi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideMenuDovi/Pods-SlideMenuDovi.debug.xcconfig"; sourceTree = "<group>"; };
+		C70DF17E5CE202533210FA2A /* Pods-SlideMenuDoviTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideMenuDoviTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideMenuDoviTests/Pods-SlideMenuDoviTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE1CDB04D807721F3AECFF18 /* Pods-SlideMenuDoviTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideMenuDoviTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideMenuDoviTests/Pods-SlideMenuDoviTests.release.xcconfig"; sourceTree = "<group>"; };
 		D808CBC41D038334008F2077 /* SliderMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuViewController.swift; path = ../SlideMenu/SliderMenuViewController.swift; sourceTree = "<group>"; };
 		D808CBC81D038353008F2077 /* SliderMenuAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuAnimation.swift; path = ../SlideMenu/AnimationType/SliderMenuAnimation.swift; sourceTree = "<group>"; };
 		D808CBC91D038353008F2077 /* SliderMenuAnimationDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SliderMenuAnimationDefault.swift; path = ../SlideMenu/AnimationType/SliderMenuAnimationDefault.swift; sourceTree = "<group>"; };
@@ -93,7 +97,7 @@
 		D8E9AF051D03846E00FDDD16 /* MenuTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuTools.swift; path = ../SlideMenu/Tools/MenuTools.swift; sourceTree = "<group>"; };
 		D8E9AF061D03846E00FDDD16 /* MenuViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewControllers.swift; path = ../SlideMenu/Tools/MenuViewControllers.swift; sourceTree = "<group>"; };
 		D8E9AF071D03846E00FDDD16 /* MenuViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViews.swift; path = ../SlideMenu/Tools/MenuViews.swift; sourceTree = "<group>"; };
-		F304D918C0FE71A87C940B4D /* Pods-SlideMenuDoviTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideMenuDoviTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideMenuDoviTests/Pods-SlideMenuDoviTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5A45EE3B1E7051DFCC51283 /* Pods-SlideMenuDovi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideMenuDovi.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideMenuDovi/Pods-SlideMenuDovi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69B60DF10A5F99398031E1D6 /* Pods_SlideMenuDovi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,20 +113,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				634278F7A301A72677E11F2F /* Pods_SlideMenuDoviTests.framework in Frameworks */,
+				9BBE8E6ED7E3B46CB6D6AFE9 /* Pods_SlideMenuDoviTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		35C2AB84157A16B64FE26848 /* Pods */ = {
+		1BB2E92C4997FF8EEA2CDD8D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F304D918C0FE71A87C940B4D /* Pods-SlideMenuDoviTests.debug.xcconfig */,
-				D765790063CC4B1C30AE32C9 /* Pods-SlideMenuDoviTests.release.xcconfig */,
+				3059929469AFF30C78771169 /* Pods_SlideMenuDovi.framework */,
+				659684B1CF27DECC605ABFB3 /* Pods_SlideMenuDoviTests.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D808CBC21D038321008F2077 /* SlideMenu */ = {
@@ -154,10 +159,10 @@
 				D81ED1F61D01E65100AC7795 /* Products */,
 				D81ED1F71D01E65100AC7795 /* SlideMenuDovi */,
 				D81ED20C1D01E65100AC7795 /* SlideMenuDoviTests */,
-				35C2AB84157A16B64FE26848 /* Pods */,
-				E3716366DCAFBF5CA35C5CCE /* Frameworks */,
 				D8E71A181D031D200082248C /* SlideMenuDovi-Bridging-Header.h */,
 				D8E71A1B1D031D440082248C /* SlideMenuDoviTests-Bridging-Header.h */,
+				FC53257E629C0A243FDD5DDC /* Pods */,
+				1BB2E92C4997FF8EEA2CDD8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -298,12 +303,15 @@
 			name = Tools;
 			sourceTree = "<group>";
 		};
-		E3716366DCAFBF5CA35C5CCE /* Frameworks */ = {
+		FC53257E629C0A243FDD5DDC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AF42B5A2E43B725D9DC0C2E1 /* Pods_SlideMenuDoviTests.framework */,
+				770A893A0AD2B03D9FD157DC /* Pods-SlideMenuDovi.debug.xcconfig */,
+				F5A45EE3B1E7051DFCC51283 /* Pods-SlideMenuDovi.release.xcconfig */,
+				C70DF17E5CE202533210FA2A /* Pods-SlideMenuDoviTests.debug.xcconfig */,
+				CE1CDB04D807721F3AECFF18 /* Pods-SlideMenuDoviTests.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,9 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D81ED21D1D01E65100AC7795 /* Build configuration list for PBXNativeTarget "SlideMenuDovi" */;
 			buildPhases = (
+				DAFB82C2154BDEF8F1AFEC52 /* [CP] Check Pods Manifest.lock */,
 				D81ED1F11D01E65100AC7795 /* Sources */,
 				D81ED1F21D01E65100AC7795 /* Frameworks */,
 				D81ED1F31D01E65100AC7795 /* Resources */,
+				826730DEEEAA015B02CFD1A5 /* [CP] Embed Pods Frameworks */,
+				0323499F83E0F588AC4BC5F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -330,12 +341,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D81ED2201D01E65100AC7795 /* Build configuration list for PBXNativeTarget "SlideMenuDoviTests" */;
 			buildPhases = (
-				8544EC29B813812BB525D141 /* Check Pods Manifest.lock */,
+				C98A978FF1B01FEC7AE4C386 /* [CP] Check Pods Manifest.lock */,
 				D81ED2051D01E65100AC7795 /* Sources */,
 				D81ED2061D01E65100AC7795 /* Frameworks */,
 				D81ED2071D01E65100AC7795 /* Resources */,
-				ED708E697720C2F6202AB43C /* Embed Pods Frameworks */,
-				24FC5743FCC61EA985700D24 /* Copy Pods Resources */,
+				F38A090B360EE7A5961E0296 /* [CP] Embed Pods Frameworks */,
+				D6398C960BB75DC0D113CED6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -354,14 +365,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Edouard Roussillon";
 				TargetAttributes = {
 					D81ED1F41D01E65100AC7795 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					D81ED2081D01E65100AC7795 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = D81ED1F41D01E65100AC7795;
 					};
 				};
@@ -406,29 +419,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		24FC5743FCC61EA985700D24 /* Copy Pods Resources */ = {
+		0323499F83E0F588AC4BC5F1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideMenuDoviTests/Pods-SlideMenuDoviTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideMenuDovi/Pods-SlideMenuDovi-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8544EC29B813812BB525D141 /* Check Pods Manifest.lock */ = {
+		826730DEEEAA015B02CFD1A5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideMenuDovi/Pods-SlideMenuDovi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C98A978FF1B01FEC7AE4C386 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,14 +464,44 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		ED708E697720C2F6202AB43C /* Embed Pods Frameworks */ = {
+		D6398C960BB75DC0D113CED6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideMenuDoviTests/Pods-SlideMenuDoviTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAFB82C2154BDEF8F1AFEC52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F38A090B360EE7A5961E0296 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,8 +601,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -589,8 +649,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -609,6 +671,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -616,6 +679,7 @@
 		};
 		D81ED21E1D01E65100AC7795 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 770A893A0AD2B03D9FD157DC /* Pods-SlideMenuDovi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -626,11 +690,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SlideMenuDovi-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		D81ED21F1D01E65100AC7795 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5A45EE3B1E7051DFCC51283 /* Pods-SlideMenuDovi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -640,13 +706,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dovi.SlideMenuDovi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SlideMenuDovi-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
 		D81ED2211D01E65100AC7795 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F304D918C0FE71A87C940B4D /* Pods-SlideMenuDoviTests.debug.xcconfig */;
+			baseConfigurationReference = C70DF17E5CE202533210FA2A /* Pods-SlideMenuDoviTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SlideMenuDoviTests/Info.plist;
@@ -655,14 +723,16 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SlideMenuDoviTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlideMenuDovi.app/SlideMenuDovi";
 			};
 			name = Debug;
 		};
 		D81ED2221D01E65100AC7795 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D765790063CC4B1C30AE32C9 /* Pods-SlideMenuDoviTests.release.xcconfig */;
+			baseConfigurationReference = CE1CDB04D807721F3AECFF18 /* Pods-SlideMenuDoviTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SlideMenuDoviTests/Info.plist;
@@ -670,6 +740,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dovi.SlideMenuDoviTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SlideMenuDoviTests-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlideMenuDovi.app/SlideMenuDovi";
 			};
 			name = Release;

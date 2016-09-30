@@ -15,11 +15,15 @@ public enum SlideAction {
     case Close
 }
 
-public enum TrackAction {
-    case TapOpen
-    case TapClose
-    case FlickOpen
-    case FlickClose
+public enum TrackActionNotification: String {
+    case MenuLeftWillOpen = "SliderMenuTrackActionNotificationMenuLeftWillOpen"
+    case MenuLeftDidOpen = "SliderMenuTrackActionNotificationMenuLeftDidOpen"
+    case MenuLeftWillClose = "SliderMenuTrackActionNotificationMeniLeftWillClose"
+    case MenuLeftDidClose = "SliderMenuTrackActionNotificationMeniLeftDidClose"
+    case MenuRightWillOpen = "SliderMenuTrackActionNotificationMenuMenuRightWillOpen"
+    case MenuRightDidOpen = "SliderMenuTrackActionNotificationMenuMenuRightDidOpen"
+    case MenuRightWillClose = "SliderMenuTrackActionNotificationMenuMenuRightWillClose"
+    case MenuRightDidClose = "SliderMenuTrackActionNotificationMenuMenuRightDidClose"
 }
 
 public struct SliderMenuOptions {
@@ -49,6 +53,9 @@ public struct SliderMenuOptions {
     public static var shadowColor: UIColor = UIColor.blackColor()
 
     public static var animationDuration: CGFloat = 0.4
+    
+    // Alow or not to open menu after more then 1 ViewController into UINavigationController's stack list of VCs
+    public static var openMenuOnlyFirstViewController: Bool = true
 
     // status bar options
     public static var hideStatusBar: Bool = false
