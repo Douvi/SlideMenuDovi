@@ -71,6 +71,7 @@ extension AnimatorVector {
         }) {(Bool) -> Void in
             self.menuTools.disableContentInteraction()
             self.menuTools.menuViewControllers.leftViewController?.endAppearanceTransition()
+            self.sendNotification(TrackAction.LeftDidOpen)
         }
     }
 
@@ -98,6 +99,7 @@ extension AnimatorVector {
             self.animationType.removeShadow(self.menuViews.mainContainerView)
             self.menuTools.enableContentInteraction()
             self.menuTools.menuViewControllers.leftViewController?.endAppearanceTransition()
+            self.sendNotification(TrackAction.LeftDidClose)
         }
     }
 
@@ -125,6 +127,7 @@ extension AnimatorVector {
         }) {(Bool) -> Void in
             self.menuTools.disableContentInteraction()
             self.menuViewControllers.rightViewController?.endAppearanceTransition()
+            self.sendNotification(TrackAction.RightDidOpen)
         }
     }
 
@@ -150,6 +153,7 @@ extension AnimatorVector {
             self.menuTools.removeShadow(self.menuViews.rightContainerView)
             self.menuTools.enableContentInteraction()
             self.menuViewControllers.rightViewController?.endAppearanceTransition()
+            self.sendNotification(TrackAction.RightDidClose)
         }
     }
 }
